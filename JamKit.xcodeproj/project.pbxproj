@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		425F31AB24FF9E240041858A /* YJHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 425F31A724FF9E240041858A /* YJHttpRequest.m */; };
+		425F31AC24FF9E240041858A /* YJJsonKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 425F31A924FF9E240041858A /* YJJsonKit.m */; };
 		42ABDCEE24F8B7AA00E7ADF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42ABDCED24F8B7AA00E7ADF8 /* AppDelegate.m */; };
 		42ABDCF924F8B7AD00E7ADF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42ABDCF824F8B7AD00E7ADF8 /* Assets.xcassets */; };
 		42ABDCFC24F8B7AD00E7ADF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42ABDCFA24F8B7AD00E7ADF8 /* LaunchScreen.storyboard */; };
@@ -39,6 +41,10 @@
 
 /* Begin PBXFileReference section */
 		1D8C4175C81B10EDFEF713CF /* libPods-JamKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JamKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		425F31A624FF9E240041858A /* YJHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJHttpRequest.h; sourceTree = "<group>"; };
+		425F31A724FF9E240041858A /* YJHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJHttpRequest.m; sourceTree = "<group>"; };
+		425F31A924FF9E240041858A /* YJJsonKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJJsonKit.m; sourceTree = "<group>"; };
+		425F31AA24FF9E240041858A /* YJJsonKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJJsonKit.h; sourceTree = "<group>"; };
 		42ABDCE924F8B7AA00E7ADF8 /* JamKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JamKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42ABDCEC24F8B7AA00E7ADF8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		42ABDCED24F8B7AA00E7ADF8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -111,6 +117,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		425F31A524FF9E240041858A /* YJHttpRequest */ = {
+			isa = PBXGroup;
+			children = (
+				425F31A624FF9E240041858A /* YJHttpRequest.h */,
+				425F31A724FF9E240041858A /* YJHttpRequest.m */,
+			);
+			path = YJHttpRequest;
+			sourceTree = "<group>";
+		};
+		425F31A824FF9E240041858A /* YJJsonKit */ = {
+			isa = PBXGroup;
+			children = (
+				425F31A924FF9E240041858A /* YJJsonKit.m */,
+				425F31AA24FF9E240041858A /* YJJsonKit.h */,
+			);
+			path = YJJsonKit;
+			sourceTree = "<group>";
+		};
 		42ABDCE024F8B7AA00E7ADF8 = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +222,8 @@
 		42AE3EEF24FE3B6A00675837 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				425F31A524FF9E240041858A /* YJHttpRequest */,
+				425F31A824FF9E240041858A /* YJJsonKit */,
 				42AE3EF924FE3D1E00675837 /* MobileSimUtil */,
 				42AE3EF024FE3B7400675837 /* UserAgentUtil */,
 			);
@@ -393,6 +419,7 @@
 			files = (
 				42AE3EFE24FE3D1E00675837 /* MobileSimModel.m in Sources */,
 				42AE3EF724FE3CA300675837 /* UIDevice+IdentifierAddition.m in Sources */,
+				425F31AB24FF9E240041858A /* YJHttpRequest.m in Sources */,
 				42ABDCEE24F8B7AA00E7ADF8 /* AppDelegate.m in Sources */,
 				42ABDD1724F8D8D500E7ADF8 /* YJWebViewPool.m in Sources */,
 				42ABDD2824FC9A7900E7ADF8 /* MainViewController.m in Sources */,
@@ -403,6 +430,7 @@
 				42AE3EF324FE3B7400675837 /* UserAgentUtil.m in Sources */,
 				42AE3EFF24FE3D1E00675837 /* MobileSimUtil.m in Sources */,
 				42AE3F0224FE3D4200675837 /* NSString+MD5.m in Sources */,
+				425F31AC24FF9E240041858A /* YJJsonKit.m in Sources */,
 				42FFAFE524FF2C4F00199C7E /* WMScrollView.m in Sources */,
 				42ABDD4624FCFA4F00E7ADF8 /* BaseViewController.m in Sources */,
 				42FFAFE324FF2C4F00199C7E /* UIViewController+WMPageController.m in Sources */,
