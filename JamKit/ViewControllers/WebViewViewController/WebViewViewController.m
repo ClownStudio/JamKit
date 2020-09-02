@@ -26,6 +26,7 @@ static NSString *_lastPage;//只记录无逻辑
     PluginUtils *_pluginUtils;
     UIActivityIndicatorView *_indicatorView;
     NSMutableArray *_targets;
+    NSURL *_originUrl;
 }
 
 -(id)initWithUrl:(NSURL *)url{
@@ -47,7 +48,7 @@ static NSString *_lastPage;//只记录无逻辑
         if ([@"" isEqualToString:title] && !isTop) {
             title = @"详情";
         }
-        
+        _originUrl = url;
         _pluginUtils = [[PluginUtils alloc] init];
         [self createWebWithTop:isTop andTitle:title];
         [self.webView loadRequest:[NSURLRequest requestWithURL:url]];
@@ -67,8 +68,11 @@ static NSString *_lastPage;//只记录无逻辑
     }
 }
 
--(void)refreshWebViewWithUrl:(NSURL *)url{
-    
+-(void)refreshWebViewWithUrl:( NSURL * _Nullable )url{
+    if (url == nil) {
+        url = _originUrl;
+    }
+    [self.webView loadRequest:[NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:TIME_OUT_SECONDS]];
 }
 
 -(void)createWebWithTop:(BOOL)isTop andTitle:(NSString *)title{

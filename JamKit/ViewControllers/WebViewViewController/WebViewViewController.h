@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(id)initWithUrl:(NSURL *)url isTop:(BOOL)isTop;
 -(id)initWithUrl:(NSURL *)url title:(NSString *)title;
 -(id)initWithUrl:(NSURL *)url isTop:(BOOL)isTop title:(NSString *)title;
--(void)refreshWebViewWithUrl:(NSURL *)url;
+-(void)refreshWebViewWithUrl:( NSURL * _Nullable )url;
 
 -(void)showIndicatorView;
 -(void)hideIndicatorView;

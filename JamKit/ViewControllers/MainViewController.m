@@ -113,6 +113,7 @@
         }
     }
     [_pageViewController setSelectIndex:index];
+    [(WebViewViewController *)[_viewControllers objectAtIndex:index] refreshWebViewWithUrl:nil];
 }
 
 @end
