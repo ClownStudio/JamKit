@@ -1,0 +1,25 @@
+//
+//  PrefixHeader.pch
+//  JamKit
+//
+//  Created by 张文洁 on 2020/8/31.
+//  Copyright © 2020 张文洁. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define safeString(obj) (([obj isEqual:[NSNull null]] || (obj == nil) || [@"null" isEqual:obj] || [@"<null>" isEqual:obj] || [@"(null)" isEqual:obj]) ? @"" : ([NSString stringWithFormat:@"%@",obj]))
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+#ifdef DEBUG
+    #define NSLog(FORMAT,...) fprintf(stderr,"[%s]:[line %d] %s %s \n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithUTF8String:__PRETTY_FUNCTION__] UTF8String], [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#else
+    #define NSLog(...) (void)0
+#endif
+
+#endif /* PrefixHeader_pch */
