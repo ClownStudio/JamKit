@@ -10,6 +10,7 @@
 #import "AFNetworking.h"
 #import "YJJsonKit.h"
 #import "Constant.h"
+#import "UserAgentUtil.h"
 
 @implementation YJHttpRequest{
     NSString *_userAgent;
@@ -24,10 +25,6 @@
         instance = [[self alloc] init];
     });
     return instance;
-}
-
-- (void)setUserAgent:(NSString *)userAgent{
-    _userAgent = userAgent;
 }
 
 - (void)getJsonWithUrl:(NSString *)url andBlock:(void(^)(id result))block{
@@ -47,16 +44,13 @@
 }
 
 - (void)getRequestDataWithUrl:(NSString *)url andBlock:(void (^)(id result))block andParameters:(id)parameters andCache:(NSURLRequestCachePolicy)cache{
-    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     [manager.requestSerializer willChangeValueForKey:@"timeoutInterval"];
     manager.requestSerializer.timeoutInterval = TIME_OUT_SECONDS;
     [manager.requestSerializer didChangeValueForKey:@"timeoutInterval"];
-    if (_userAgent) {
-        [manager.requestSerializer setValue:_userAgent forHTTPHeaderField:@"User-Agent"];
-    }
+    [manager.requestSerializer setValue:[[UserAgentUtil sharedInstance] getUserAgent] forHTTPHeaderField:USER_AGENT];
     if(cache){
         [manager.requestSerializer setCachePolicy:cache];
     }
@@ -84,7 +78,7 @@
 }
 
 - (void)postJsonWithUrl:(NSString *)url andRequestContents:(NSDictionary *)contents andBlock:(void(^)(id result))block{
-    [self postDataWithUrl:url andRequestContents:contents andEphemeral:NO andBlock:^(id result) {
+    [self postDataWithUrl:url andRequestContents:contents andBlock:^(id result) {
         if (result == nil) {
             if (block)block(nil);
         }else{
@@ -93,40 +87,21 @@
     }];
 }
 
-- (void)ephemeralPostJsonWithUrl:(NSString *)url andRequestContents:(NSDictionary *)contents andBlock:(void(^)(id result))block{
-    NSLog(@"postJsonWithUrl url = %@",url);
-    [self postDataWithUrl:url andRequestContents:contents andEphemeral:YES andBlock:^(id result) {
-        if (result == nil) {
-            if (block)block(nil);
-        }else{
-            if (block)block([[[NSString alloc] initWithData:result encoding:NSUTF8StringEncoding] objectFromJSONString]);
-        }
-    }];
-}
-
-- (void)postDataWithUrl:(NSString *)url andRequestContents:(NSDictionary *)contents andEphemeral:(BOOL)ephemeral andBlock:(void(^)(id result))block{
-    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
-    AFHTTPSessionManager *manager;
-    if(ephemeral){
-        manager = [[AFHTTPSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration ephemeralSessionConfiguration]];
-    }else{
-        manager = [AFHTTPSessionManager manager];
-    }
-    
+- (void)postDataWithUrl:(NSString *)url andRequestContents:(NSDictionary *)contents andBlock:(void(^)(id result))block{
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     [manager.requestSerializer willChangeValueForKey:@"timeoutInterval"];
     manager.requestSerializer.timeoutInterval = TIME_OUT_SECONDS;
     [manager.requestSerializer didChangeValueForKey:@"timeoutInterval"];
-    if (_userAgent) {
-        [manager.requestSerializer setValue:_userAgent forHTTPHeaderField:@"User-Agent"];
-    }
+    [manager.requestSerializer setValue:[[UserAgentUtil sharedInstance] getUserAgent] forHTTPHeaderField:USER_AGENT];
     
 #if defined(DEV_VERSION)
-    DebugLog(@"UnSafePost");
+    NSLog(@"UnSafePost");
     manager.securityPolicy.allowInvalidCertificates = YES;
     manager.securityPolicy.validatesDomainName = NO;
 #endif
+    
     [manager POST:url parameters:contents progress:^(NSProgress * _Nonnull uploadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {

@@ -27,7 +27,4 @@
 //Post方式获取二进制数据
 - (void)postDataWithUrl:(NSString *)url andRequestContents:(NSDictionary *)contents andEphemeral:(BOOL)ephemeral andBlock:(void(^)(id result))block;
 
-//Post方式临时的进程内会话
-- (void)ephemeralPostJsonWithUrl:(NSString *)url andRequestContents:(NSDictionary *)contents andBlock:(void(^)(id result))block;
-
 @end

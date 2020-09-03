@@ -16,5 +16,6 @@
 #define DEVICE_TOKEN_PASS @"jamkit"
 #define NAVIGATIONBAR_HEIGHT 55
 #define TABBAR_HEIGHT 50
+#define USER_AGENT @"User-Agent"
 
 #endif /* Constant_h */
