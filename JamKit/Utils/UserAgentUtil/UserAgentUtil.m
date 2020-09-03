@@ -47,7 +47,7 @@
         
         NSString *version = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
         MobileSimModel *model =  [[MobileSimUtil sharedInstance] getMobileSimModel];
-        NSString *deviceAgent = [NSMutableString stringWithString:[NSString stringWithFormat:@"cibbank/yyptclient/%@/iphone/%@/%@/devicename/%@",[[UIDevice currentDevice]uniqueDeviceIdentifier],version,APP_ACCESS_KEY,model.deviceName]];
+        NSString *deviceAgent = [NSMutableString stringWithString:[NSString stringWithFormat:@"JamStudio/JamKit/%@/iOS/%@/%@/DeviceName/%@",[[UIDevice currentDevice]uniqueDeviceIdentifier],version,APP_ACCESS_KEY,model.deviceName]];
         
         _localUserAgent = [NSString stringWithFormat:@"%@ %@",originalUserAgent,deviceAgent];
         NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:_localUserAgent, @"UserAgent",nil];

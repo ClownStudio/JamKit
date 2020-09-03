@@ -8,7 +8,9 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
-#import "ViewControllers/RootViewController.h"
+#import "RootViewController.h"
+#import "WKWebView+YJWebViewExtension.h"
+#import "UserAgentUtil.h"
 
 @interface AppDelegate ()
 
@@ -19,6 +21,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [WKWebView configCustomUAWithType:YJWebViewConfigUATypeReplace UAString:[[UserAgentUtil sharedInstance] getUserAgent]];
     RootViewController *rootViewController = [[RootViewController alloc] initWithRootViewController:[[MainViewController alloc] init]];
     [rootViewController setNavigationBarHidden:YES];
     

@@ -12,8 +12,8 @@
 #define WIDTH ([[UIScreen mainScreen] bounds].size.width)
 #define HEIGHT ([[UIScreen mainScreen] bounds].size.height)
 #define TIME_OUT_SECONDS 20.0
-#define APP_ACCESS_KEY @"appsalt"
-#define DEVICE_TOKEN_PASS @"jamkit"
+#define APP_ACCESS_KEY @"50493215"
+#define DEVICE_TOKEN_PASS @"DEVICE_TOKEN_PASS"
 #define NAVIGATIONBAR_HEIGHT 55
 #define TABBAR_HEIGHT 50
 #define USER_AGENT @"User-Agent"
