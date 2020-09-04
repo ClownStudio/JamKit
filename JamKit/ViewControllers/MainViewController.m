@@ -25,9 +25,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    WebViewViewController *first = [[WebViewViewController alloc] initWithUrl:[NSURL URLWithString:@"https://www.alipay.com"] isTop:YES];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"YJBridge" ofType:@"html"];
+    WebViewViewController *first = [[WebViewViewController alloc] initWithUrl:[NSURL fileURLWithPath:path] isTop:YES title:@"YJBridge"];
     
-    WebViewViewController *second = [[WebViewViewController alloc] initWithUrl:[NSURL URLWithString:@"https://2.taobao.com"] isTop:YES];
+    WebViewViewController *second = [[WebViewViewController alloc] initWithUrl:[NSURL URLWithString:@"https://www.alipay.com"] isTop:YES];
     
     WebViewViewController *third = [[WebViewViewController alloc] initWithUrl:[NSURL URLWithString:@"https://www.weibo.com"] isTop:YES];
     

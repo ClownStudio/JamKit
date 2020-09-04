@@ -27,6 +27,7 @@ static NSString *_lastPage;//只记录无逻辑
     UIActivityIndicatorView *_indicatorView;
     NSMutableArray *_targets;
     NSURL *_originUrl;
+    BOOL _isTop;
 }
 
 -(id)initWithUrl:(NSURL *)url{
@@ -45,9 +46,6 @@ static NSString *_lastPage;//只记录无逻辑
     self = [super init];
     if (self) {
         title = safeString(title);
-        if ([@"" isEqualToString:title] && !isTop) {
-            title = @"详情";
-        }
         _originUrl = url;
         _pluginUtils = [[PluginUtils alloc] init];
         [self createWebWithTop:isTop andTitle:title];
@@ -61,6 +59,10 @@ static NSString *_lastPage;//只记录无逻辑
     [super viewSafeAreaInsetsDidChange];
     if (self.navigationBar) {
         [self.navigationBar reLayoutWithBlankHeight:self.view.safeAreaInsets.top];
+        CGRect temp = self.webView.frame;
+        temp.origin.y = self.navigationBar.bounds.size.height;
+        temp.size.height = HEIGHT - (self.navigationBar.bounds.size.height + (_isTop ? (TABBAR_HEIGHT + self.view.safeAreaInsets.bottom):0));
+        self.webView.frame = temp;
     }else{
         CGRect temp = self.webView.frame;
         temp.size.height = HEIGHT - (TABBAR_HEIGHT + self.view.safeAreaInsets.bottom);
@@ -75,17 +77,25 @@ static NSString *_lastPage;//只记录无逻辑
     [self.webView loadRequest:[NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:TIME_OUT_SECONDS]];
 }
 
+//isTop：是否是最外层的ViewController
+//title：如果title为空且为最外层，默认不初始化导航栏。
 -(void)createWebWithTop:(BOOL)isTop andTitle:(NSString *)title{
+    _isTop = isTop;
     CGFloat bottomHeight = 0;
-    if (!isTop) {
+    if ([@"" isEqualToString:title] && !isTop) {
+        title = @"详情";
+    }
+
+    if ([@"" isEqualToString:title] == NO) {
         self.navigationBar = [[BackNavigationBar alloc] init];
         self.navigationBar.delegate = self;
         [self.navigationBar setTitle:title];
-        if (isTop == NO) {
-            [self.navigationBar customizeBackButton];
-        }
-    }else{
+    }
+    
+    if (isTop) {
         bottomHeight = 50;
+    }else{
+        [self.navigationBar customizeBackButton];
     }
     
     WKUserContentController *userContentController = [[WKUserContentController alloc] init];

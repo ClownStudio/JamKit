@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <title>YJBridge</title>
+        <style>
+            body{
+                font-size:18px;
+            }
+            button{
+                color:#fff;
+                background-color:#0e90d2;
+                border-color:#0e90d2;
+                border-width:0px;
+                font-size:18px;
+                text-align:center;
+                padding:5px;
+                margin:5px;
+            }
+            .info-group{
+                border:1px solid #eee;
+                margin:10px;
+            }
+            a{
+                color:#0e90d2;
+            }
+        </style>
+        
+        <script type="text/javascript">
+            var pictureSource;
+            var destinationType;
+            var ctx="#";
+            function getCtx()
+            {
+                return ctx;
+            }
+        function setCtx(str)
+        {
+            ctx=str;
+            
+        }
+        function init(){
+            window.plugins.infoPlugin.getCtx(setCtx, failureCallback);
+            pictureSource=navigator.camera.PictureSourceType;
+            destinationType=navigator.camera.DestinationType;
+        }
+        function showAlert(x){
+            setTimeout(function(){
+                       alert(x);
+                       },100)
+        }
+        //失败时返回的方法
+        function failureCallback(data){
+            showMsg("error:"+ data);
+        }
+        
+        function successCallback(data){
+            showMsg("success:"+ data);
+        }
+        
+        function infoLocation(){
+            window.plugins.infoPlugin.location(function(data){showMsg(data);});
+        }
+        function limitTransferStation(){
+            if (window.plugins && window.plugins.infoPlugin && window.plugins.infoPlugin.limitTransferStation) {
+                var c = "{'type':'loan01'}";
+                window.plugins.infoPlugin.limitTransferStation(function(result){showMsg(result);}, function(error){showMsg(error);}, c);
+            }
+        }
+        
+        function nativePluginVersion(){
+            window.plugins.nativePlugin.version(function(version){
+               alert(version);
+            });
+        }
+        function showPaymentPwdView1(){
+            var show = '{"amt" : "12345","unit" : "元","prodName" : "转账金额"}';
+            //url为空时使用传统的页面回调返回加密后的密码
+            var param = '{"url" : "/purchase.do","index" : "0","pwd" : "pwdKey"}';
+            //pk  加密时用的key
+            //eid  忘记密码时用的eid
+            //protocalMsg 协议信息
+            //title 标题
+            var params = "{'pk':'321321','eid':'37327190','title':'输入支付密码','show':"+show+",'param':"+param+",'resultTitle':'支付结果'}";
+            
+            window.plugins.nativePlugin.showPaymentKeyBoard(sucPwd, failureCallback,params);
+        }
+        function showPaymentPwdView2(){
+            //url为空时使用传统的页面回调返回加密后的密码,pwd可以为空
+            var param = '{"url" : "","index" : "0","pwd" : "pwdKey"}';
+            //pk  加密时用的key
+            //eid  忘记密码时用的eid
+            //title 标题
+            var params = "{'pk':'321321','eid':'37327190','title':'请输入证券资金账户密码','protocalMsg':'请开通信用卡自动还款','param':"+param+"}";
+            window.plugins.nativePlugin.showPaymentKeyBoard(sucPwd, failureCallback,params);
+        }
+        function getNumberKeyBoard(){
+            var params = '{"type":"X","data":"","objId":"wrapper","offsetY":700,"maxLength":10,"accuracy":4}';
+            window.plugins.nativePlugin.showNumberKeyBoard(null,null,params);
+        }
+        function showSMSCodeView(){
+            var params = '{"title":"请输入短信验证码","content":"已发送短信验证码至","mobile":"18503011000","type":"REGIST"}';
+            window.plugins.nativePlugin.showSMSCodeView(sucPwd,function(msg){
+                if(msg == 'noSms'){
+                    noSms();
+                }
+            },params);
+        }
+        </script>
+        
+    </head>
+    
+    <body>
+        
+        <div>
+            <div class="scroller">
+                <!--
+                 <div class="info-group">
+                 
+                 <button onclick=" showLogin()"  >登入/签约</button>
+                 <button onclick=" showLogout('00001')"   >登出</button>
+                 
+                 </div>
+                 -->
+                <div class="info-group">
+                    5.0 NativePlugin
+                </div>
+                <div class="info-group">
+                    <button onclick="nativePluginVersion()">version</button>
+                    <button onclick="clearPopReloadUrl()">clearPopReloadUrl</button>
+                    
+                    <button onclick="showPaymentPwdView1()">支付键盘1</button>
+                    <button onclick="showPaymentPwdView2()">支付键盘2</button>
+                    <button onclick="getNumberKeyBoard()">数字键盘</button>
+                    <button onclick="showSMSCodeView()">验证码弹框</button>
+                    <button onclick="window.plugins.nativePlugin.showTipView()">弹出启动页</button>
+                    <button onclick="window.plugins.nativePlugin.showTKOpenView()">弹出华福证券</button>
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+

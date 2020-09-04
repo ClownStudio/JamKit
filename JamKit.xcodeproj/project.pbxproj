@@ -30,6 +30,7 @@
 		42AE3EFE24FE3D1E00675837 /* MobileSimModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AE3EFA24FE3D1E00675837 /* MobileSimModel.m */; };
 		42AE3EFF24FE3D1E00675837 /* MobileSimUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AE3EFD24FE3D1E00675837 /* MobileSimUtil.m */; };
 		42AE3F0224FE3D4200675837 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AE3F0124FE3D4200675837 /* NSString+MD5.m */; };
+		42C6905A2501E94E00BAD42B /* YJBridge.html in Resources */ = {isa = PBXBuildFile; fileRef = 42C690592501E94E00BAD42B /* YJBridge.html */; };
 		42FFAFE224FF2C4F00199C7E /* WMPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FFAFD524FF2C4F00199C7E /* WMPageController.m */; };
 		42FFAFE324FF2C4F00199C7E /* UIViewController+WMPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FFAFD624FF2C4F00199C7E /* UIViewController+WMPageController.m */; };
 		42FFAFE424FF2C4F00199C7E /* WMMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FFAFDC24FF2C4F00199C7E /* WMMenuItem.m */; };
@@ -89,6 +90,7 @@
 		42AE3EFD24FE3D1E00675837 /* MobileSimUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MobileSimUtil.m; sourceTree = "<group>"; };
 		42AE3F0024FE3D4200675837 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
 		42AE3F0124FE3D4200675837 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		42C690592501E94E00BAD42B /* YJBridge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = YJBridge.html; sourceTree = "<group>"; };
 		42FFAFD524FF2C4F00199C7E /* WMPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMPageController.m; sourceTree = "<group>"; };
 		42FFAFD624FF2C4F00199C7E /* UIViewController+WMPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+WMPageController.m"; sourceTree = "<group>"; };
 		42FFAFD824FF2C4F00199C7E /* WMScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMScrollView.h; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 			children = (
 				42ABDCEC24F8B7AA00E7ADF8 /* AppDelegate.h */,
 				42ABDCED24F8B7AA00E7ADF8 /* AppDelegate.m */,
+				42C690592501E94E00BAD42B /* YJBridge.html */,
 				42ABDD0924F8B8D300E7ADF8 /* ViewControllers */,
 				42AE3EEF24FE3B6A00675837 /* Utils */,
 				42AE3EF424FE3C9500675837 /* Extensions */,
@@ -380,6 +383,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42C6905A2501E94E00BAD42B /* YJBridge.html in Resources */,
 				42ABDCFC24F8B7AD00E7ADF8 /* LaunchScreen.storyboard in Resources */,
 				42ABDCF924F8B7AD00E7ADF8 /* Assets.xcassets in Resources */,
 			);
