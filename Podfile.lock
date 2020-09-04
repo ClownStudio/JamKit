@@ -15,20 +15,24 @@ PODS:
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
   - IQKeyboardManager (6.5.6)
+  - MMNumberKeyboard (0.3.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.2.1)
   - IQKeyboardManager (~> 6.5.6)
+  - MMNumberKeyboard (~> 0.3.1)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - IQKeyboardManager
+    - MMNumberKeyboard
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
+  MMNumberKeyboard: 17b8336af7270ea668e9b3b594cab80c5c69546e
 
-PODFILE CHECKSUM: 01a73196cf87dde6f33977babc930805e604cd27
+PODFILE CHECKSUM: f559ba8ad6d805b636184f7deefd11dee1e75471
 
 COCOAPODS: 1.9.3
