@@ -8,14 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "BackNavigationBar.h"
-#import <WebKit/WebKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WebViewViewController : UIViewController <BackNavigationBarDelegate,UIScrollViewDelegate,UIActionSheetDelegate,WKNavigationDelegate,WKUIDelegate>
+@interface WebViewViewController : UIViewController <BackNavigationBarDelegate,UIScrollViewDelegate,UIActionSheetDelegate>
 
 @property (nonatomic,strong)BackNavigationBar *navigationBar;
-@property (nonatomic,strong)WKWebView *webView;
 
 -(id)initWithUrl:(NSURL *)url;
 -(id)initWithUrl:(NSURL *)url isTop:(BOOL)isTop;

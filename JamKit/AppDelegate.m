@@ -9,7 +9,6 @@
 #import "AppDelegate.h"
 #import "MainViewController.h"
 #import "RootViewController.h"
-#import "WKWebView+YJWebViewExtension.h"
 #import "UserAgentUtil.h"
 #import <IQKeyboardManager.h>
 
@@ -22,8 +21,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [WKWebView configCustomUAWithType:YJWebViewConfigUATypeReplace UAString:[[UserAgentUtil sharedInstance] getUserAgent]];
-    
     [[IQKeyboardManager sharedManager] setEnable:YES];
     
     RootViewController *rootViewController = [[RootViewController alloc] initWithRootViewController:[[MainViewController alloc] init]];

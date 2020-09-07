@@ -8,22 +8,26 @@
 
 #import "WebViewViewController.h"
 #import "Constant.h"
-#import "YJWebViewPool.h"
-#import "AppPlugin_JS.h"
-#import "NativeJS.h"
 #import "UINavigationController+FDFullscreenPopGesture.h"
-#import "PluginUtils.h"
 #import "NotificationName.h"
 #import "UserAgentUtil.h"
+#import "KKWebViewPool.h"
+#import "KKJSBridge.h"
+#import "ModuleContext.h"
+#import "ModuleDefault.h"
+#import "KKWebView.h"
+#import <AFNetworking.h>
 
-@interface WebViewViewController ()
+@interface WebViewViewController () <WKUIDelegate,WKNavigationDelegate>
+
+@property (nonatomic, strong, readwrite) KKWebView *webView;
+@property (nonatomic, strong) KKJSBridgeEngine *jsBridgeEngine;
 
 @end
 
 static NSString *_lastPage;//只记录无逻辑
 
 @implementation WebViewViewController{
-    PluginUtils *_pluginUtils;
     UIActivityIndicatorView *_indicatorView;
     NSMutableArray *_targets;
     NSURL *_originUrl;
@@ -47,12 +51,36 @@ static NSString *_lastPage;//只记录无逻辑
     if (self) {
         title = safeString(title);
         _originUrl = url;
-        _pluginUtils = [[PluginUtils alloc] init];
+        [self commonInit];
         [self createWebWithTop:isTop andTitle:title];
         [self.webView loadRequest:[NSURLRequest requestWithURL:url]];
         [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(pageFlowDestroy) name:UIApplicationDidEnterBackgroundNotification object:nil];
     }
     return self;
+}
+
++ (void)load {
+    __block id observer = [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidFinishLaunchingNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
+        [self prepareWebView];
+        [[NSNotificationCenter defaultCenter] removeObserver:observer];
+    }];
+}
+
++ (void)prepareWebView {
+    // 预先缓存一个 webView
+    [KKWebView configCustomUAWithType:KKWebViewConfigUATypeAppend UAString:@"KKJSBridge/1.0.0"];
+    [[KKWebViewPool sharedInstance] makeWebViewConfiguration:^(WKWebViewConfiguration * _Nonnull configuration) {
+        // 必须前置配置，否则会造成属性不生效的问题
+        configuration.allowsInlineMediaPlayback = YES;
+        configuration.preferences.minimumFontSize = 12;
+    }];
+    [[KKWebViewPool sharedInstance] enqueueWebViewWithClass:KKWebView.class];
+    KKJSBridgeConfig.ajaxDelegateManager = (id<KKJSBridgeAjaxDelegateManager>)self; // 请求外部代理处理，可以借助 AFN 网络库来发送请求
+}
+
+- (void)dealloc {
+    [[KKWebViewPool sharedInstance] enqueueWebView:self.webView];
+    NSLog(@"WebViewController dealloc");
 }
 
 -(void)viewSafeAreaInsetsDidChange{
@@ -75,6 +103,62 @@ static NSString *_lastPage;//只记录无逻辑
         url = _originUrl;
     }
     [self.webView loadRequest:[NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:TIME_OUT_SECONDS]];
+}
+
+- (void)commonInit{
+    _webView = [[KKWebViewPool sharedInstance] dequeueWebViewWithClass:KKWebView.class webViewHolder:self];
+    _webView.navigationDelegate = self;
+    _jsBridgeEngine = [KKJSBridgeEngine bridgeForWebView:self.webView];
+    _jsBridgeEngine.config.enableAjaxHook = YES;
+    
+    [self compatibleWebViewJavascriptBridge];
+    [self registerModule];
+}
+
+- (void)compatibleWebViewJavascriptBridge {
+    NSString *jsString = [[NSString alloc] initWithContentsOfFile:[[NSBundle bundleForClass:self.class] pathForResource:@"WebViewJavascriptBridge" ofType:@"js"] encoding:NSUTF8StringEncoding error:NULL];
+    WKUserScript *userScript = [[WKUserScript alloc] initWithSource:jsString injectionTime:WKUserScriptInjectionTimeAtDocumentStart forMainFrameOnly:NO];
+    [self.webView.configuration.userContentController addUserScript:userScript];
+}
+
+- (void)registerModule {
+    ModuleContext *context = [ModuleContext new];
+    context.vc = self;
+    context.scrollView = self.webView.scrollView;
+    context.name = @"上下文";
+    
+    // 注册 默认模块
+    [self.jsBridgeEngine.moduleRegister registerModuleClass:ModuleDefault.class];
+}
+
+#pragma mark - KKJSBridgeAjaxDelegateManager
++ (NSURLSessionDataTask *)dataTaskWithRequest:(NSURLRequest *)request callbackDelegate:(NSObject<KKJSBridgeAjaxDelegate> *)callbackDelegate {
+    return [[self ajaxSesstionManager] dataTaskWithRequest:request uploadProgress:nil downloadProgress:nil completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+        // 处理响应数据
+        [callbackDelegate JSBridgeAjax:callbackDelegate didReceiveResponse:response];
+        if ([responseObject isKindOfClass:NSData.class]) {
+            [callbackDelegate JSBridgeAjax:callbackDelegate didReceiveData:responseObject];
+        } else if ([responseObject isKindOfClass:NSDictionary.class]) {
+            NSData *responseData = [NSJSONSerialization dataWithJSONObject:responseObject options:0 error:nil];
+            [callbackDelegate JSBridgeAjax:callbackDelegate didReceiveData:responseData];
+        } else {
+            NSData *responseData = [NSJSONSerialization dataWithJSONObject:@{} options:0 error:nil];
+            [callbackDelegate JSBridgeAjax:callbackDelegate didReceiveData:responseData];
+        }
+        [callbackDelegate JSBridgeAjax:callbackDelegate didCompleteWithError:error];
+    }];
+}
+
++ (AFHTTPSessionManager *)ajaxSesstionManager {
+    static AFHTTPSessionManager *instance;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        instance = [[AFHTTPSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+        instance.requestSerializer = [AFHTTPRequestSerializer serializer];
+        instance.responseSerializer = [AFHTTPResponseSerializer serializer];
+    });
+    
+    return instance;
 }
 
 //isTop：是否是最外层的ViewController
@@ -100,12 +184,6 @@ static NSString *_lastPage;//只记录无逻辑
     
     WKUserContentController *userContentController = [[WKUserContentController alloc] init];
     
-    WKUserScript *userScript = [[WKUserScript alloc]initWithSource:CLWebViewJavascriptBridge_js() injectionTime:WKUserScriptInjectionTimeAtDocumentStart forMainFrameOnly:NO];
-    [userContentController addUserScript:userScript];
-    
-    WKUserScript *nativeScript = [[WKUserScript alloc]initWithSource:[NativeJS js] injectionTime:WKUserScriptInjectionTimeAtDocumentStart forMainFrameOnly:NO];
-    [userContentController addUserScript:nativeScript];
-    
     WKWebViewConfiguration *configuration = [[WKWebViewConfiguration alloc] init];
     configuration.userContentController = userContentController;
     
@@ -115,9 +193,8 @@ static NSString *_lastPage;//只记录无逻辑
     if (@available(iOS 10.0, *)) {
         configuration.mediaTypesRequiringUserActionForPlayback = NO;
     }
-    configuration.processPool = [YJWebViewPool sharedPoolManager];
     
-    self.webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, self.navigationBar.bounds.size.height, WIDTH, HEIGHT - CGRectGetMaxY(self.navigationBar.frame) - bottomHeight) configuration:configuration];
+    self.webView = [[KKWebView alloc] initWithFrame:CGRectMake(0, self.navigationBar.bounds.size.height, WIDTH, HEIGHT - CGRectGetMaxY(self.navigationBar.frame) - bottomHeight) configuration:configuration];
     self.webView.scrollView.delegate = self;
     self.webView.translatesAutoresizingMaskIntoConstraints = false;
     
@@ -251,13 +328,12 @@ static NSString *_lastPage;//只记录无逻辑
 
 // 在收到响应后，决定是否跳转
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler{
-    NSString *url = [navigationAction.request.URL absoluteString];
-    if(![@""isEqualToString:url] && [url hasPrefix:CALLFUNCTION_PREFIX_HTTPS]){
-        [_pluginUtils executePluginByUrl:url webView:webView webViewController:self];
-        decisionHandler(WKNavigationActionPolicyCancel);
-    }else{
-        decisionHandler(WKNavigationActionPolicyAllow);
-    }
+     if ([navigationAction.request.URL.absoluteString containsString:@"https://__bridge_loaded__"]) {// 防止 WebViewJavascriptBridge 注入
+         decisionHandler(WKNavigationActionPolicyCancel);
+         return;
+     }
+    
+    decisionHandler(WKNavigationActionPolicyAllow);
 }
 
 /**
@@ -364,30 +440,6 @@ static NSString *_lastPage;//只记录无逻辑
 -(void)onDoneScreen{
     
 }
-
--(void)dealloc{
-    NSLog(@"WebViewViewController dealloc");
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidEnterBackgroundNotification object:nil];
-    
-    if (_webView.scrollView.delegate) {
-        _webView.scrollView.delegate = nil;
-    }
-    if (_webView.navigationDelegate) {
-        _webView.navigationDelegate = nil;
-    }
-    if (_webView.navigationDelegate) {
-        _webView.navigationDelegate = nil;
-    }
-    if (_pluginUtils) {
-        [_pluginUtils clearTargets];
-        _pluginUtils = nil;
-    }
-    if(_indicatorView){
-        [_indicatorView stopAnimating];
-        _indicatorView = nil;
-    }
-}
-
 
 - (BOOL)shouldAutorotate {
     return YES;

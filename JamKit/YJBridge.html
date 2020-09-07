@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
-        <meta name="format-detection" content="telephone=no"/>
+        <meta name="format-detection" content="telephone= no"/>
         <title>YJBridge</title>
         <style>
             body{
@@ -22,16 +22,25 @@
             .info-group{
                 margin:10px;
             }
+            a{
+                color:#0e90d2;
+            }
         </style>
     </head>
     <body>
+        <script type="text/javascript">
+            function showNumberKeyboard(){
+                alert('123');
+                window.webkit.messageHandlers.KKJSBridgeMessage.postMessage("NativePlugin", "showNumberKeyboard");
+            }
+        </script>
         <div>
             <div class="scroller">
                 <div class="info-group">
-                    NativePlugin
+                    NativePlugin 方法调用
                 </div>
                 <div class="info-group">
-                    <button onclick="window.plugins.nativePlugin.showNumberKeyboard()">弹出数字键盘</button>
+                    <button onclick="showNumberKeyboard()">弹出数字键盘</button>
                 </div>
             </div>
         </div>
