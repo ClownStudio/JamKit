@@ -7,7 +7,7 @@
 //
 
 #import "ModuleNative.h"
-#import "KKJSBridge.h"
+#import <KKJSBridge.h>
 
 @implementation ModuleNative
 

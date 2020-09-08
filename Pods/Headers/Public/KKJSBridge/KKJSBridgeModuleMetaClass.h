@@ -1,0 +1,1 @@
+../../../KKJSBridge/KKJSBridge/KKJSBridge/Register/KKJSBridgeModuleMetaClass.h

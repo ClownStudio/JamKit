@@ -11,7 +11,7 @@
 #import "UINavigationController+FDFullscreenPopGesture.h"
 #import "NotificationName.h"
 #import "UserAgentUtil.h"
-#import "KKJSBridge.h"
+#import <KKJSBridge.h>
 #import "ModuleContext.h"
 #import "ModuleNative.h"
 #import <AFNetworking.h>

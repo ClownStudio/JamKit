@@ -50,32 +50,6 @@
 		42C690CC25022D3300BAD42B /* keyboard-click2.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 42C690AF25022D3300BAD42B /* keyboard-click2.aiff */; };
 		42C690CD25022D3300BAD42B /* KRSymbolKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C690B325022D3300BAD42B /* KRSymbolKeyboard.m */; };
 		42C690CE25022D3300BAD42B /* KRKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C690B525022D3300BAD42B /* KRKeyboard.m */; };
-		42F3577725061848008CE547 /* KKJSBridgeWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3573325061848008CE547 /* KKJSBridgeWeakProxy.m */; };
-		42F3577825061848008CE547 /* KKJSBridgeJSExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3573725061848008CE547 /* KKJSBridgeJSExecutor.m */; };
-		42F3577925061848008CE547 /* KKJSBridgeWeakScriptMessageDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3573925061848008CE547 /* KKJSBridgeWeakScriptMessageDelegate.m */; };
-		42F3577A25061848008CE547 /* KKJSBridgeSafeDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3573A25061848008CE547 /* KKJSBridgeSafeDictionary.m */; };
-		42F3577B25061848008CE547 /* KKJSBridgeLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3573C25061848008CE547 /* KKJSBridgeLogger.m */; };
-		42F3577C25061848008CE547 /* KKJSBridgeEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3573D25061848008CE547 /* KKJSBridgeEngine.m */; };
-		42F3577D25061848008CE547 /* KKJSBridgeConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3573F25061848008CE547 /* KKJSBridgeConfig.m */; };
-		42F3577E25061848008CE547 /* KKJSBridge.js in Resources */ = {isa = PBXBuildFile; fileRef = 42F3574325061848008CE547 /* KKJSBridge.js */; };
-		42F3577F25061848008CE547 /* KKJSBridgeMessageDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3574625061848008CE547 /* KKJSBridgeMessageDispatcher.m */; };
-		42F3578025061848008CE547 /* KKJSBridgeMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3574725061848008CE547 /* KKJSBridgeMessage.m */; };
-		42F3578125061848008CE547 /* KKJSBridgeModuleMetaClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3574A25061848008CE547 /* KKJSBridgeModuleMetaClass.m */; };
-		42F3578225061848008CE547 /* KKJSBridgeModuleRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3574D25061848008CE547 /* KKJSBridgeModuleRegister.m */; };
-		42F3578325061848008CE547 /* KKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3575025061848008CE547 /* KKWebView.m */; };
-		42F3578425061848008CE547 /* WKWebView+KKWebViewExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3575225061848008CE547 /* WKWebView+KKWebViewExtension.m */; };
-		42F3578525061848008CE547 /* KKWebViewCookieManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3575625061848008CE547 /* KKWebViewCookieManager.m */; };
-		42F3578625061848008CE547 /* WKWebView+KKWebViewReusable.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3575925061848008CE547 /* WKWebView+KKWebViewReusable.m */; };
-		42F3578725061848008CE547 /* KKWebViewPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3575C25061848008CE547 /* KKWebViewPool.m */; };
-		42F3578825061848008CE547 /* KKJSBridgeModuleCookie.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3576025061848008CE547 /* KKJSBridgeModuleCookie.m */; };
-		42F3578925061848008CE547 /* KKJSBridgeAjaxURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3576325061848008CE547 /* KKJSBridgeAjaxURLProtocol.m */; };
-		42F3578A25061848008CE547 /* NSURLProtocol+KKJSBridgeWKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3576425061848008CE547 /* NSURLProtocol+KKJSBridgeWKWebView.m */; };
-		42F3578B25061848008CE547 /* KKJSBridgeXMLBodyCacheRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3576725061848008CE547 /* KKJSBridgeXMLBodyCacheRequest.m */; };
-		42F3578C25061848008CE547 /* KKJSBridgeFormDataFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3576B25061848008CE547 /* KKJSBridgeFormDataFile.m */; };
-		42F3578D25061848008CE547 /* KKJSBridgeStreamingMultipartFormData.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3576C25061848008CE547 /* KKJSBridgeStreamingMultipartFormData.m */; };
-		42F3578E25061848008CE547 /* KKJSBridgeURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3576D25061848008CE547 /* KKJSBridgeURLRequestSerialization.m */; };
-		42F3578F25061848008CE547 /* KKJSBridgeModuleXMLHttpRequestDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3577325061848008CE547 /* KKJSBridgeModuleXMLHttpRequestDispatcher.m */; };
-		42F3579025061848008CE547 /* KKJSBridgeXMLHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3577425061848008CE547 /* KKJSBridgeXMLHttpRequest.m */; };
 		42F3579525061898008CE547 /* BackNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3579425061898008CE547 /* BackNavigationBar.m */; };
 		42F3579825062FC3008CE547 /* WebViewJavascriptBridge.js in Resources */ = {isa = PBXBuildFile; fileRef = 42F3579725062FC3008CE547 /* WebViewJavascriptBridge.js */; };
 		42F357A725062FCF008CE547 /* ModuleContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3579F25062FCF008CE547 /* ModuleContext.m */; };
@@ -180,61 +154,6 @@
 		42C690B325022D3300BAD42B /* KRSymbolKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRSymbolKeyboard.m; sourceTree = "<group>"; };
 		42C690B425022D3300BAD42B /* KRKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRKeyboard.h; sourceTree = "<group>"; };
 		42C690B525022D3300BAD42B /* KRKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRKeyboard.m; sourceTree = "<group>"; };
-		42F3573225061848008CE547 /* KKJSBridgeMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeMacro.h; sourceTree = "<group>"; };
-		42F3573325061848008CE547 /* KKJSBridgeWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeWeakProxy.m; sourceTree = "<group>"; };
-		42F3573425061848008CE547 /* KKJSBridgeWeakScriptMessageDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeWeakScriptMessageDelegate.h; sourceTree = "<group>"; };
-		42F3573525061848008CE547 /* KKJSBridgeSafeDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeSafeDictionary.h; sourceTree = "<group>"; };
-		42F3573625061848008CE547 /* KKJSBridgeLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeLogger.h; sourceTree = "<group>"; };
-		42F3573725061848008CE547 /* KKJSBridgeJSExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeJSExecutor.m; sourceTree = "<group>"; };
-		42F3573825061848008CE547 /* KKJSBridgeWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeWeakProxy.h; sourceTree = "<group>"; };
-		42F3573925061848008CE547 /* KKJSBridgeWeakScriptMessageDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeWeakScriptMessageDelegate.m; sourceTree = "<group>"; };
-		42F3573A25061848008CE547 /* KKJSBridgeSafeDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeSafeDictionary.m; sourceTree = "<group>"; };
-		42F3573B25061848008CE547 /* KKJSBridgeJSExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeJSExecutor.h; sourceTree = "<group>"; };
-		42F3573C25061848008CE547 /* KKJSBridgeLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeLogger.m; sourceTree = "<group>"; };
-		42F3573D25061848008CE547 /* KKJSBridgeEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeEngine.m; sourceTree = "<group>"; };
-		42F3573F25061848008CE547 /* KKJSBridgeConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeConfig.m; sourceTree = "<group>"; };
-		42F3574025061848008CE547 /* KKJSBridgeConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeConfig.h; sourceTree = "<group>"; };
-		42F3574125061848008CE547 /* KKJSBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridge.h; sourceTree = "<group>"; };
-		42F3574325061848008CE547 /* KKJSBridge.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = KKJSBridge.js; sourceTree = "<group>"; };
-		42F3574525061848008CE547 /* KKJSBridgeMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeMessage.h; sourceTree = "<group>"; };
-		42F3574625061848008CE547 /* KKJSBridgeMessageDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeMessageDispatcher.m; sourceTree = "<group>"; };
-		42F3574725061848008CE547 /* KKJSBridgeMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeMessage.m; sourceTree = "<group>"; };
-		42F3574825061848008CE547 /* KKJSBridgeMessageDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeMessageDispatcher.h; sourceTree = "<group>"; };
-		42F3574A25061848008CE547 /* KKJSBridgeModuleMetaClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeModuleMetaClass.m; sourceTree = "<group>"; };
-		42F3574B25061848008CE547 /* KKJSBridgeModuleRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeModuleRegister.h; sourceTree = "<group>"; };
-		42F3574C25061848008CE547 /* KKJSBridgeModuleMetaClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeModuleMetaClass.h; sourceTree = "<group>"; };
-		42F3574D25061848008CE547 /* KKJSBridgeModuleRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeModuleRegister.m; sourceTree = "<group>"; };
-		42F3574E25061848008CE547 /* KKJSBridgeEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeEngine.h; sourceTree = "<group>"; };
-		42F3575025061848008CE547 /* KKWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKWebView.m; sourceTree = "<group>"; };
-		42F3575225061848008CE547 /* WKWebView+KKWebViewExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+KKWebViewExtension.m"; sourceTree = "<group>"; };
-		42F3575325061848008CE547 /* WKWebView+KKWebViewExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WKWebView+KKWebViewExtension.h"; sourceTree = "<group>"; };
-		42F3575525061848008CE547 /* KKWebViewCookieManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKWebViewCookieManager.h; sourceTree = "<group>"; };
-		42F3575625061848008CE547 /* KKWebViewCookieManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKWebViewCookieManager.m; sourceTree = "<group>"; };
-		42F3575725061848008CE547 /* KKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKWebView.h; sourceTree = "<group>"; };
-		42F3575925061848008CE547 /* WKWebView+KKWebViewReusable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+KKWebViewReusable.m"; sourceTree = "<group>"; };
-		42F3575A25061848008CE547 /* KKWebViewPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKWebViewPool.h; sourceTree = "<group>"; };
-		42F3575B25061848008CE547 /* WKWebView+KKWebViewReusable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WKWebView+KKWebViewReusable.h"; sourceTree = "<group>"; };
-		42F3575C25061848008CE547 /* KKWebViewPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKWebViewPool.m; sourceTree = "<group>"; };
-		42F3575F25061848008CE547 /* KKJSBridgeModuleCookie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeModuleCookie.h; sourceTree = "<group>"; };
-		42F3576025061848008CE547 /* KKJSBridgeModuleCookie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeModuleCookie.m; sourceTree = "<group>"; };
-		42F3576325061848008CE547 /* KKJSBridgeAjaxURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeAjaxURLProtocol.m; sourceTree = "<group>"; };
-		42F3576425061848008CE547 /* NSURLProtocol+KKJSBridgeWKWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLProtocol+KKJSBridgeWKWebView.m"; sourceTree = "<group>"; };
-		42F3576525061848008CE547 /* KKJSBridgeAjaxURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeAjaxURLProtocol.h; sourceTree = "<group>"; };
-		42F3576625061848008CE547 /* NSURLProtocol+KKJSBridgeWKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLProtocol+KKJSBridgeWKWebView.h"; sourceTree = "<group>"; };
-		42F3576725061848008CE547 /* KKJSBridgeXMLBodyCacheRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeXMLBodyCacheRequest.m; sourceTree = "<group>"; };
-		42F3576925061848008CE547 /* KKJSBridgeURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeURLRequestSerialization.h; sourceTree = "<group>"; };
-		42F3576A25061848008CE547 /* KKJSBridgeMultipartFormData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeMultipartFormData.h; sourceTree = "<group>"; };
-		42F3576B25061848008CE547 /* KKJSBridgeFormDataFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeFormDataFile.m; sourceTree = "<group>"; };
-		42F3576C25061848008CE547 /* KKJSBridgeStreamingMultipartFormData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeStreamingMultipartFormData.m; sourceTree = "<group>"; };
-		42F3576D25061848008CE547 /* KKJSBridgeURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeURLRequestSerialization.m; sourceTree = "<group>"; };
-		42F3576E25061848008CE547 /* KKJSBridgeFormDataFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeFormDataFile.h; sourceTree = "<group>"; };
-		42F3576F25061848008CE547 /* KKJSBridgeStreamingMultipartFormData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeStreamingMultipartFormData.h; sourceTree = "<group>"; };
-		42F3577125061848008CE547 /* KKJSBridgeXMLHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeXMLHttpRequest.h; sourceTree = "<group>"; };
-		42F3577225061848008CE547 /* KKJSBridgeModuleXMLHttpRequestDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeModuleXMLHttpRequestDispatcher.h; sourceTree = "<group>"; };
-		42F3577325061848008CE547 /* KKJSBridgeModuleXMLHttpRequestDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeModuleXMLHttpRequestDispatcher.m; sourceTree = "<group>"; };
-		42F3577425061848008CE547 /* KKJSBridgeXMLHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKJSBridgeXMLHttpRequest.m; sourceTree = "<group>"; };
-		42F3577525061848008CE547 /* KKJSBridgeXMLBodyCacheRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeXMLBodyCacheRequest.h; sourceTree = "<group>"; };
-		42F3577625061848008CE547 /* KKJSBridgeAjaxDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKJSBridgeAjaxDelegate.h; sourceTree = "<group>"; };
 		42F3579325061898008CE547 /* BackNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackNavigationBar.h; sourceTree = "<group>"; };
 		42F3579425061898008CE547 /* BackNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackNavigationBar.m; sourceTree = "<group>"; };
 		42F3579725062FC3008CE547 /* WebViewJavascriptBridge.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = WebViewJavascriptBridge.js; sourceTree = "<group>"; };
@@ -347,7 +266,6 @@
 			children = (
 				42F3579925062FCF008CE547 /* Module */,
 				42F3579625062FC3008CE547 /* JS */,
-				42F3573025061848008CE547 /* KKJSBridge */,
 				42AE3EEB24FE2B7000675837 /* WebViewViewController.h */,
 				42AE3EEA24FE2B7000675837 /* WebViewViewController.m */,
 			);
@@ -524,189 +442,6 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
-		42F3573025061848008CE547 /* KKJSBridge */ = {
-			isa = PBXGroup;
-			children = (
-				42F3573E25061848008CE547 /* Config */,
-				42F3574425061848008CE547 /* Dispatcher */,
-				42F3574225061848008CE547 /* JS */,
-				42F3574125061848008CE547 /* KKJSBridge.h */,
-				42F3574E25061848008CE547 /* KKJSBridgeEngine.h */,
-				42F3573D25061848008CE547 /* KKJSBridgeEngine.m */,
-				42F3575D25061848008CE547 /* Modules */,
-				42F3574925061848008CE547 /* Register */,
-				42F3573125061848008CE547 /* Util */,
-				42F3574F25061848008CE547 /* View */,
-			);
-			name = KKJSBridge;
-			path = "../../../../../Downloads/KKJSBridge-master/KKJSBridge/KKJSBridge";
-			sourceTree = "<group>";
-		};
-		42F3573125061848008CE547 /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				42F3573225061848008CE547 /* KKJSBridgeMacro.h */,
-				42F3573325061848008CE547 /* KKJSBridgeWeakProxy.m */,
-				42F3573425061848008CE547 /* KKJSBridgeWeakScriptMessageDelegate.h */,
-				42F3573525061848008CE547 /* KKJSBridgeSafeDictionary.h */,
-				42F3573625061848008CE547 /* KKJSBridgeLogger.h */,
-				42F3573725061848008CE547 /* KKJSBridgeJSExecutor.m */,
-				42F3573825061848008CE547 /* KKJSBridgeWeakProxy.h */,
-				42F3573925061848008CE547 /* KKJSBridgeWeakScriptMessageDelegate.m */,
-				42F3573A25061848008CE547 /* KKJSBridgeSafeDictionary.m */,
-				42F3573B25061848008CE547 /* KKJSBridgeJSExecutor.h */,
-				42F3573C25061848008CE547 /* KKJSBridgeLogger.m */,
-			);
-			path = Util;
-			sourceTree = "<group>";
-		};
-		42F3573E25061848008CE547 /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				42F3573F25061848008CE547 /* KKJSBridgeConfig.m */,
-				42F3574025061848008CE547 /* KKJSBridgeConfig.h */,
-			);
-			path = Config;
-			sourceTree = "<group>";
-		};
-		42F3574225061848008CE547 /* JS */ = {
-			isa = PBXGroup;
-			children = (
-				42F3574325061848008CE547 /* KKJSBridge.js */,
-			);
-			path = JS;
-			sourceTree = "<group>";
-		};
-		42F3574425061848008CE547 /* Dispatcher */ = {
-			isa = PBXGroup;
-			children = (
-				42F3574525061848008CE547 /* KKJSBridgeMessage.h */,
-				42F3574625061848008CE547 /* KKJSBridgeMessageDispatcher.m */,
-				42F3574725061848008CE547 /* KKJSBridgeMessage.m */,
-				42F3574825061848008CE547 /* KKJSBridgeMessageDispatcher.h */,
-			);
-			path = Dispatcher;
-			sourceTree = "<group>";
-		};
-		42F3574925061848008CE547 /* Register */ = {
-			isa = PBXGroup;
-			children = (
-				42F3574A25061848008CE547 /* KKJSBridgeModuleMetaClass.m */,
-				42F3574B25061848008CE547 /* KKJSBridgeModuleRegister.h */,
-				42F3574C25061848008CE547 /* KKJSBridgeModuleMetaClass.h */,
-				42F3574D25061848008CE547 /* KKJSBridgeModuleRegister.m */,
-			);
-			path = Register;
-			sourceTree = "<group>";
-		};
-		42F3574F25061848008CE547 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				42F3575025061848008CE547 /* KKWebView.m */,
-				42F3575125061848008CE547 /* Extension */,
-				42F3575425061848008CE547 /* CookieManager */,
-				42F3575725061848008CE547 /* KKWebView.h */,
-				42F3575825061848008CE547 /* WebViewPool */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		42F3575125061848008CE547 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				42F3575225061848008CE547 /* WKWebView+KKWebViewExtension.m */,
-				42F3575325061848008CE547 /* WKWebView+KKWebViewExtension.h */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		42F3575425061848008CE547 /* CookieManager */ = {
-			isa = PBXGroup;
-			children = (
-				42F3575525061848008CE547 /* KKWebViewCookieManager.h */,
-				42F3575625061848008CE547 /* KKWebViewCookieManager.m */,
-			);
-			path = CookieManager;
-			sourceTree = "<group>";
-		};
-		42F3575825061848008CE547 /* WebViewPool */ = {
-			isa = PBXGroup;
-			children = (
-				42F3575925061848008CE547 /* WKWebView+KKWebViewReusable.m */,
-				42F3575A25061848008CE547 /* KKWebViewPool.h */,
-				42F3575B25061848008CE547 /* WKWebView+KKWebViewReusable.h */,
-				42F3575C25061848008CE547 /* KKWebViewPool.m */,
-			);
-			path = WebViewPool;
-			sourceTree = "<group>";
-		};
-		42F3575D25061848008CE547 /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				42F3575E25061848008CE547 /* Cookie */,
-				42F3576125061848008CE547 /* Ajax */,
-			);
-			path = Modules;
-			sourceTree = "<group>";
-		};
-		42F3575E25061848008CE547 /* Cookie */ = {
-			isa = PBXGroup;
-			children = (
-				42F3575F25061848008CE547 /* KKJSBridgeModuleCookie.h */,
-				42F3576025061848008CE547 /* KKJSBridgeModuleCookie.m */,
-			);
-			path = Cookie;
-			sourceTree = "<group>";
-		};
-		42F3576125061848008CE547 /* Ajax */ = {
-			isa = PBXGroup;
-			children = (
-				42F3576225061848008CE547 /* URLProtocol */,
-				42F3576725061848008CE547 /* KKJSBridgeXMLBodyCacheRequest.m */,
-				42F3576825061848008CE547 /* FormData */,
-				42F3577025061848008CE547 /* OldAjax */,
-				42F3577525061848008CE547 /* KKJSBridgeXMLBodyCacheRequest.h */,
-				42F3577625061848008CE547 /* KKJSBridgeAjaxDelegate.h */,
-			);
-			path = Ajax;
-			sourceTree = "<group>";
-		};
-		42F3576225061848008CE547 /* URLProtocol */ = {
-			isa = PBXGroup;
-			children = (
-				42F3576325061848008CE547 /* KKJSBridgeAjaxURLProtocol.m */,
-				42F3576425061848008CE547 /* NSURLProtocol+KKJSBridgeWKWebView.m */,
-				42F3576525061848008CE547 /* KKJSBridgeAjaxURLProtocol.h */,
-				42F3576625061848008CE547 /* NSURLProtocol+KKJSBridgeWKWebView.h */,
-			);
-			path = URLProtocol;
-			sourceTree = "<group>";
-		};
-		42F3576825061848008CE547 /* FormData */ = {
-			isa = PBXGroup;
-			children = (
-				42F3576925061848008CE547 /* KKJSBridgeURLRequestSerialization.h */,
-				42F3576A25061848008CE547 /* KKJSBridgeMultipartFormData.h */,
-				42F3576B25061848008CE547 /* KKJSBridgeFormDataFile.m */,
-				42F3576C25061848008CE547 /* KKJSBridgeStreamingMultipartFormData.m */,
-				42F3576D25061848008CE547 /* KKJSBridgeURLRequestSerialization.m */,
-				42F3576E25061848008CE547 /* KKJSBridgeFormDataFile.h */,
-				42F3576F25061848008CE547 /* KKJSBridgeStreamingMultipartFormData.h */,
-			);
-			path = FormData;
-			sourceTree = "<group>";
-		};
-		42F3577025061848008CE547 /* OldAjax */ = {
-			isa = PBXGroup;
-			children = (
-				42F3577125061848008CE547 /* KKJSBridgeXMLHttpRequest.h */,
-				42F3577225061848008CE547 /* KKJSBridgeModuleXMLHttpRequestDispatcher.h */,
-				42F3577325061848008CE547 /* KKJSBridgeModuleXMLHttpRequestDispatcher.m */,
-				42F3577425061848008CE547 /* KKJSBridgeXMLHttpRequest.m */,
-			);
-			path = OldAjax;
-			sourceTree = "<group>";
-		};
 		42F3579225061898008CE547 /* BackNavigationBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -838,7 +573,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42F3577E25061848008CE547 /* KKJSBridge.js in Resources */,
 				42C690CC25022D3300BAD42B /* keyboard-click2.aiff in Resources */,
 				42C690BF25022D3300BAD42B /* Remark in Resources */,
 				42C6905A2501E94E00BAD42B /* YJBridge.html in Resources */,
@@ -901,72 +635,47 @@
 			files = (
 				42C690C725022D3300BAD42B /* MASViewConstraint.m in Sources */,
 				42AE3EFE24FE3D1E00675837 /* MobileSimModel.m in Sources */,
-				42F3577B25061848008CE547 /* KKJSBridgeLogger.m in Sources */,
 				42AE3EF724FE3CA300675837 /* UIDevice+IdentifierAddition.m in Sources */,
-				42F3577F25061848008CE547 /* KKJSBridgeMessageDispatcher.m in Sources */,
 				42F357A725062FCF008CE547 /* ModuleContext.m in Sources */,
 				425F31AB24FF9E240041858A /* YJHttpRequest.m in Sources */,
-				42F3578C25061848008CE547 /* KKJSBridgeFormDataFile.m in Sources */,
 				42ABDCEE24F8B7AA00E7ADF8 /* AppDelegate.m in Sources */,
-				42F3577725061848008CE547 /* KKJSBridgeWeakProxy.m in Sources */,
 				42C690C825022D3300BAD42B /* MASViewAttribute.m in Sources */,
-				42F3578E25061848008CE547 /* KKJSBridgeURLRequestSerialization.m in Sources */,
 				42C690C125022D3300BAD42B /* MASCompositeConstraint.m in Sources */,
-				42F3578F25061848008CE547 /* KKJSBridgeModuleXMLHttpRequestDispatcher.m in Sources */,
 				42C690BC25022D3300BAD42B /* NSArray+Sudoku.m in Sources */,
 				42C690642502283500BAD42B /* NSMutableArray+QueueAdditions.m in Sources */,
-				42F3577D25061848008CE547 /* KKJSBridgeConfig.m in Sources */,
-				42F3578B25061848008CE547 /* KKJSBridgeXMLBodyCacheRequest.m in Sources */,
 				42F357AB25077F27008CE547 /* ModuleNative.m in Sources */,
-				42F3578925061848008CE547 /* KKJSBridgeAjaxURLProtocol.m in Sources */,
 				42C690BD25022D3300BAD42B /* MASForbearance.m in Sources */,
 				42C690B825022D3300BAD42B /* KRPasswordKeyboard.m in Sources */,
 				42ABDD2824FC9A7900E7ADF8 /* MainViewController.m in Sources */,
-				42F3578225061848008CE547 /* KKJSBridgeModuleRegister.m in Sources */,
 				42C690C525022D3300BAD42B /* View+MASAdditions.m in Sources */,
 				42C690C325022D3300BAD42B /* MASLayoutConstraint.m in Sources */,
 				42F3579525061898008CE547 /* BackNavigationBar.m in Sources */,
 				42C690C425022D3300BAD42B /* NSArray+MASAdditions.m in Sources */,
-				42F3578525061848008CE547 /* KKWebViewCookieManager.m in Sources */,
-				42F3578325061848008CE547 /* KKWebView.m in Sources */,
 				42C690C625022D3300BAD42B /* MASConstraint.m in Sources */,
 				42FFAFE424FF2C4F00199C7E /* WMMenuItem.m in Sources */,
-				42F3577825061848008CE547 /* KKJSBridgeJSExecutor.m in Sources */,
-				42F3578425061848008CE547 /* WKWebView+KKWebViewExtension.m in Sources */,
-				42F3578125061848008CE547 /* KKJSBridgeModuleMetaClass.m in Sources */,
 				42C690CA25022D3300BAD42B /* KRNumberKeyboard.m in Sources */,
 				42C690BA25022D3300BAD42B /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
-				42F3578A25061848008CE547 /* NSURLProtocol+KKJSBridgeWKWebView.m in Sources */,
-				42F3577925061848008CE547 /* KKJSBridgeWeakScriptMessageDelegate.m in Sources */,
 				42C690B925022D3300BAD42B /* KRLetterKeyboard.m in Sources */,
 				42C690CE25022D3300BAD42B /* KRKeyboard.m in Sources */,
 				42FFAFE724FF2C4F00199C7E /* WMProgressView.m in Sources */,
 				42C690CD25022D3300BAD42B /* KRSymbolKeyboard.m in Sources */,
 				42FFAFE224FF2C4F00199C7E /* WMPageController.m in Sources */,
-				42F3578D25061848008CE547 /* KKJSBridgeStreamingMultipartFormData.m in Sources */,
-				42F3579025061848008CE547 /* KKJSBridgeXMLHttpRequest.m in Sources */,
 				42AE3EF324FE3B7400675837 /* UserAgentUtil.m in Sources */,
 				42AE3EFF24FE3D1E00675837 /* MobileSimUtil.m in Sources */,
 				42C690C225022D3300BAD42B /* MASConstraintMaker.m in Sources */,
 				42C690BE25022D3300BAD42B /* ViewController+MASAdditions.m in Sources */,
 				42AE3F0224FE3D4200675837 /* NSString+MD5.m in Sources */,
-				42F3578025061848008CE547 /* KKJSBridgeMessage.m in Sources */,
 				425F31AC24FF9E240041858A /* YJJsonKit.m in Sources */,
 				42FFAFE524FF2C4F00199C7E /* WMScrollView.m in Sources */,
-				42F3578625061848008CE547 /* WKWebView+KKWebViewReusable.m in Sources */,
 				42ABDD4624FCFA4F00E7ADF8 /* BaseViewController.m in Sources */,
 				42FFAFE324FF2C4F00199C7E /* UIViewController+WMPageController.m in Sources */,
 				42C690C025022D3300BAD42B /* UIView+Forbearance.m in Sources */,
-				42F3577A25061848008CE547 /* KKJSBridgeSafeDictionary.m in Sources */,
 				42AE3EEC24FE2B7000675837 /* WebViewViewController.m in Sources */,
 				42FFAFE624FF2C4F00199C7E /* WMMenuView.m in Sources */,
-				42F3578725061848008CE547 /* KKWebViewPool.m in Sources */,
 				42ABDD0C24F8B8D300E7ADF8 /* RootViewController.m in Sources */,
 				42ABDCFF24F8B7AD00E7ADF8 /* main.m in Sources */,
-				42F3578825061848008CE547 /* KKJSBridgeModuleCookie.m in Sources */,
 				42ABDD3724FCD55000E7ADF8 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				42C690C925022D3300BAD42B /* KRBaseKeyboard.m in Sources */,
-				42F3577C25061848008CE547 /* KKJSBridgeEngine.m in Sources */,
 				42C690BB25022D3300BAD42B /* MASConstraintMaker+Forbearance.m in Sources */,
 				42C690B725022D3300BAD42B /* KRHintBubble.m in Sources */,
 			);
