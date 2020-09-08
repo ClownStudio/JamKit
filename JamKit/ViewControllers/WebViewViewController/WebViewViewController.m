@@ -11,11 +11,9 @@
 #import "UINavigationController+FDFullscreenPopGesture.h"
 #import "NotificationName.h"
 #import "UserAgentUtil.h"
-#import "KKWebViewPool.h"
 #import "KKJSBridge.h"
 #import "ModuleContext.h"
 #import "ModuleDefault.h"
-#import "KKWebView.h"
 #import <AFNetworking.h>
 
 @interface WebViewViewController () <WKUIDelegate,WKNavigationDelegate>
@@ -68,7 +66,7 @@ static NSString *_lastPage;//只记录无逻辑
 
 + (void)prepareWebView {
     // 预先缓存一个 webView
-    [KKWebView configCustomUAWithType:KKWebViewConfigUATypeAppend UAString:@"KKJSBridge/1.0.0"];
+    [KKWebView configCustomUAWithType:KKWebViewConfigUATypeReplace UAString:[[UserAgentUtil sharedInstance] getUserAgent]];
     [[KKWebViewPool sharedInstance] makeWebViewConfiguration:^(WKWebViewConfiguration * _Nonnull configuration) {
         // 必须前置配置，否则会造成属性不生效的问题
         configuration.allowsInlineMediaPlayback = YES;
@@ -109,14 +107,15 @@ static NSString *_lastPage;//只记录无逻辑
     _webView = [[KKWebViewPool sharedInstance] dequeueWebViewWithClass:KKWebView.class webViewHolder:self];
     _webView.navigationDelegate = self;
     _jsBridgeEngine = [KKJSBridgeEngine bridgeForWebView:self.webView];
-    _jsBridgeEngine.config.enableAjaxHook = YES;
+    _jsBridgeEngine.config.enableAjaxHook = NO;
     
     [self compatibleWebViewJavascriptBridge];
     [self registerModule];
 }
 
 - (void)compatibleWebViewJavascriptBridge {
-    NSString *jsString = [[NSString alloc] initWithContentsOfFile:[[NSBundle bundleForClass:self.class] pathForResource:@"WebViewJavascriptBridge" ofType:@"js"] encoding:NSUTF8StringEncoding error:NULL];
+    NSError *error;
+    NSString *jsString = [[NSString alloc] initWithContentsOfFile:[[NSBundle bundleForClass:self.class] pathForResource:@"WebViewJavascriptBridge" ofType:@"js"] encoding:NSUTF8StringEncoding error:&error];
     WKUserScript *userScript = [[WKUserScript alloc] initWithSource:jsString injectionTime:WKUserScriptInjectionTimeAtDocumentStart forMainFrameOnly:NO];
     [self.webView.configuration.userContentController addUserScript:userScript];
 }
@@ -182,29 +181,9 @@ static NSString *_lastPage;//只记录无逻辑
         [self.navigationBar customizeBackButton];
     }
     
-    WKUserContentController *userContentController = [[WKUserContentController alloc] init];
-    
-    WKWebViewConfiguration *configuration = [[WKWebViewConfiguration alloc] init];
-    configuration.userContentController = userContentController;
-    
-    WKPreferences *preferences = [WKPreferences new];
-    configuration.preferences = preferences;
-    configuration.allowsInlineMediaPlayback = YES;
-    if (@available(iOS 10.0, *)) {
-        configuration.mediaTypesRequiringUserActionForPlayback = NO;
-    }
-    
-    self.webView = [[KKWebView alloc] initWithFrame:CGRectMake(0, self.navigationBar.bounds.size.height, WIDTH, HEIGHT - CGRectGetMaxY(self.navigationBar.frame) - bottomHeight) configuration:configuration];
+    [self.webView setFrame:CGRectMake(0, self.navigationBar.bounds.size.height, WIDTH, HEIGHT - CGRectGetMaxY(self.navigationBar.frame) - bottomHeight)];
     self.webView.scrollView.delegate = self;
     self.webView.translatesAutoresizingMaskIntoConstraints = false;
-    
-    if ([self.webView respondsToSelector:@selector(setNavigationDelegate:)]) {
-        [self.webView setNavigationDelegate:self];
-    }
-    
-    if ([self.webView respondsToSelector:@selector(setUIDelegate:)]) {
-        [self.webView setUIDelegate:self];
-    }
     
     if (@available(iOS 11.0, *)) {
         _webView.scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
