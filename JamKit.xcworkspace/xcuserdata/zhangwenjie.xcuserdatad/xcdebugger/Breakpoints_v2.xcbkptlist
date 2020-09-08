@@ -39,16 +39,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "3F4D0DDE-F977-4AA5-9C30-9C1DE67046A3"
-            shouldBeEnabled = "No"
+            uuid = "9901F328-8EC8-4CF5-B8EF-CC5796C04C1F"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../Downloads/KKJSBridge-master/KKJSBridge/KKJSBridge/KKJSBridgeEngine.m"
+            filePath = "JamKit/ViewControllers/WebViewViewController/Module/ModuleDefault.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
-            landmarkName = "-userContentController:didReceiveScriptMessage:"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "-callToTriggerEvent:params:responseCallback:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

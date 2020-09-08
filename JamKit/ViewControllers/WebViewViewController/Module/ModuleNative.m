@@ -1,22 +1,18 @@
 //
-//  ModuleDefault.m
-//  KKJSBridgeDemo
+//  ModuleNative.m
+//  JamKit
 //
-//  Created by karos li on 2019/8/29.
-//  Copyright © 2019 karosli. All rights reserved.
+//  Created by 张文洁 on 2020/9/8.
+//  Copyright © 2020 张文洁. All rights reserved.
 //
 
-#import "ModuleDefault.h"
+#import "ModuleNative.h"
 #import "KKJSBridge.h"
 
-@interface ModuleDefault()<KKJSBridgeModule>
-
-@end
-
-@implementation ModuleDefault
+@implementation ModuleNative
 
 + (nonnull NSString *)moduleName {
-    return @"default";
+    return @"native";
 }
 
 + (nonnull NSDictionary<NSString *, NSString *> *)methodInvokeMapper {

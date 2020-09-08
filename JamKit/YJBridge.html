@@ -30,8 +30,7 @@
     <body>
         <script type="text/javascript">
             function showNumberKeyboard(){
-                window.alert('123');
-                window.webkit.messageHandlers.KKJSBridgeMessage.postMessage("NativePlugin", "showNumberKeyboard");
+                window.KKJSBridge.callNative("native", "showNumberKeyboard",null,null);
             }
         </script>
         <div>

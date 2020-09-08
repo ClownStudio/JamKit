@@ -78,8 +78,8 @@
 		42F3579025061848008CE547 /* KKJSBridgeXMLHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3577425061848008CE547 /* KKJSBridgeXMLHttpRequest.m */; };
 		42F3579525061898008CE547 /* BackNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3579425061898008CE547 /* BackNavigationBar.m */; };
 		42F3579825062FC3008CE547 /* WebViewJavascriptBridge.js in Resources */ = {isa = PBXBuildFile; fileRef = 42F3579725062FC3008CE547 /* WebViewJavascriptBridge.js */; };
-		42F357A425062FCF008CE547 /* ModuleDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3579B25062FCF008CE547 /* ModuleDefault.m */; };
 		42F357A725062FCF008CE547 /* ModuleContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3579F25062FCF008CE547 /* ModuleContext.m */; };
+		42F357AB25077F27008CE547 /* ModuleNative.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F357AA25077F27008CE547 /* ModuleNative.m */; };
 		42FFAFE224FF2C4F00199C7E /* WMPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FFAFD524FF2C4F00199C7E /* WMPageController.m */; };
 		42FFAFE324FF2C4F00199C7E /* UIViewController+WMPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FFAFD624FF2C4F00199C7E /* UIViewController+WMPageController.m */; };
 		42FFAFE424FF2C4F00199C7E /* WMMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FFAFDC24FF2C4F00199C7E /* WMMenuItem.m */; };
@@ -239,9 +239,9 @@
 		42F3579425061898008CE547 /* BackNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackNavigationBar.m; sourceTree = "<group>"; };
 		42F3579725062FC3008CE547 /* WebViewJavascriptBridge.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = WebViewJavascriptBridge.js; sourceTree = "<group>"; };
 		42F3579A25062FCF008CE547 /* ModuleContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleContext.h; sourceTree = "<group>"; };
-		42F3579B25062FCF008CE547 /* ModuleDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleDefault.m; sourceTree = "<group>"; };
 		42F3579F25062FCF008CE547 /* ModuleContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleContext.m; sourceTree = "<group>"; };
-		42F357A225062FCF008CE547 /* ModuleDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleDefault.h; sourceTree = "<group>"; };
+		42F357A925077F27008CE547 /* ModuleNative.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleNative.h; sourceTree = "<group>"; };
+		42F357AA25077F27008CE547 /* ModuleNative.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModuleNative.m; sourceTree = "<group>"; };
 		42FFAFD524FF2C4F00199C7E /* WMPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMPageController.m; sourceTree = "<group>"; };
 		42FFAFD624FF2C4F00199C7E /* UIViewController+WMPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+WMPageController.m"; sourceTree = "<group>"; };
 		42FFAFD824FF2C4F00199C7E /* WMScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMScrollView.h; sourceTree = "<group>"; };
@@ -729,8 +729,8 @@
 			children = (
 				42F3579A25062FCF008CE547 /* ModuleContext.h */,
 				42F3579F25062FCF008CE547 /* ModuleContext.m */,
-				42F357A225062FCF008CE547 /* ModuleDefault.h */,
-				42F3579B25062FCF008CE547 /* ModuleDefault.m */,
+				42F357A925077F27008CE547 /* ModuleNative.h */,
+				42F357AA25077F27008CE547 /* ModuleNative.m */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -914,10 +914,10 @@
 				42C690C125022D3300BAD42B /* MASCompositeConstraint.m in Sources */,
 				42F3578F25061848008CE547 /* KKJSBridgeModuleXMLHttpRequestDispatcher.m in Sources */,
 				42C690BC25022D3300BAD42B /* NSArray+Sudoku.m in Sources */,
-				42F357A425062FCF008CE547 /* ModuleDefault.m in Sources */,
 				42C690642502283500BAD42B /* NSMutableArray+QueueAdditions.m in Sources */,
 				42F3577D25061848008CE547 /* KKJSBridgeConfig.m in Sources */,
 				42F3578B25061848008CE547 /* KKJSBridgeXMLBodyCacheRequest.m in Sources */,
+				42F357AB25077F27008CE547 /* ModuleNative.m in Sources */,
 				42F3578925061848008CE547 /* KKJSBridgeAjaxURLProtocol.m in Sources */,
 				42C690BD25022D3300BAD42B /* MASForbearance.m in Sources */,
 				42C690B825022D3300BAD42B /* KRPasswordKeyboard.m in Sources */,

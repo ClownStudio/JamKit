@@ -13,7 +13,7 @@
 #import "UserAgentUtil.h"
 #import "KKJSBridge.h"
 #import "ModuleContext.h"
-#import "ModuleDefault.h"
+#import "ModuleNative.h"
 #import <AFNetworking.h>
 
 @interface WebViewViewController () <WKUIDelegate,WKNavigationDelegate>
@@ -129,7 +129,7 @@ static NSString *_lastPage;//只记录无逻辑
     context.name = @"上下文";
     
     // 注册 默认模块
-    [self.jsBridgeEngine.moduleRegister registerModuleClass:ModuleDefault.class];
+    [self.jsBridgeEngine.moduleRegister registerModuleClass:ModuleNative.class];
 }
 
 #pragma mark - KKJSBridgeAjaxDelegateManager
