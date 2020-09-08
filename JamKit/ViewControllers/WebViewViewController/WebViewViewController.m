@@ -70,7 +70,9 @@ static NSString *_lastPage;//只记录无逻辑
     [[KKWebViewPool sharedInstance] makeWebViewConfiguration:^(WKWebViewConfiguration * _Nonnull configuration) {
         // 必须前置配置，否则会造成属性不生效的问题
         configuration.allowsInlineMediaPlayback = YES;
-        configuration.preferences.minimumFontSize = 12;
+        if (@available(iOS 10.0, *)) {
+            configuration.mediaTypesRequiringUserActionForPlayback = NO;
+        }
     }];
     [[KKWebViewPool sharedInstance] enqueueWebViewWithClass:KKWebView.class];
     KKJSBridgeConfig.ajaxDelegateManager = (id<KKJSBridgeAjaxDelegateManager>)self; // 请求外部代理处理，可以借助 AFN 网络库来发送请求
