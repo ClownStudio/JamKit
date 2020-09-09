@@ -129,7 +129,7 @@ static NSString *_lastPage;//只记录无逻辑
     context.name = @"上下文";
     
     // 注册 默认模块
-    [self.jsBridgeEngine.moduleRegister registerModuleClass:ModuleNative.class];
+    [self.jsBridgeEngine.moduleRegister registerModuleClass:ModuleNative.class withContext:context];
 }
 
 #pragma mark - KKJSBridgeAjaxDelegateManager

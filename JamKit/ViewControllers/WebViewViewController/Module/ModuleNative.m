@@ -8,6 +8,13 @@
 
 #import "ModuleNative.h"
 #import <KKJSBridge.h>
+#import "ModuleContext.h"
+
+@interface ModuleNative()<KKJSBridgeModule>
+
+@property (nonatomic, weak) ModuleContext *context;
+
+@end
 
 @implementation ModuleNative
 
@@ -15,17 +22,18 @@
     return @"native";
 }
 
-+ (nonnull NSDictionary<NSString *, NSString *> *)methodInvokeMapper {
-    // 消息转发，可以把 本模块的消息转发到 c 模块里
-    return @{@"method": @"c.method"};
+// 模块初始化方法，支持上下文带入
+- (instancetype)initWithEngine:(KKJSBridgeEngine *)engine context:(id)context {
+    if (self = [super init]) {
+        _context = context;
+    }
+
+    return self;
 }
 
-- (void)callToTriggerEvent:(KKJSBridgeEngine *)engine params:(NSDictionary *)params responseCallback:(void (^)(NSDictionary *responseData))responseCallback {
-    [engine dispatchEvent:@"triggerEvent" data:@{@"eventData": @"dddd"}];
-}
-
-- (void)method:(KKJSBridgeEngine *)engine params:(NSDictionary *)params responseCallback:(void (^)(NSDictionary *responseData))responseCallback {
-    responseCallback ? responseCallback(@{@"desc": @"我是默认模块"}) : nil;
+// 模块提供的方法
+- (void)getNativeTitle:(KKJSBridgeEngine *)engine params:(NSDictionary *)params responseCallback:(void (^)(NSDictionary *responseData))responseCallback {
+    responseCallback ? responseCallback(@{@"title": [params objectForKey:@"b"] ? [params objectForKey:@"b"] : @""}) : nil;
 }
 
 @end

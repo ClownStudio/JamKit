@@ -25,31 +25,6 @@
 		42AE3F0224FE3D4200675837 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AE3F0124FE3D4200675837 /* NSString+MD5.m */; };
 		42C6905A2501E94E00BAD42B /* YJBridge.html in Resources */ = {isa = PBXBuildFile; fileRef = 42C690592501E94E00BAD42B /* YJBridge.html */; };
 		42C690642502283500BAD42B /* NSMutableArray+QueueAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C690632502283500BAD42B /* NSMutableArray+QueueAdditions.m */; };
-		42C690B625022D3300BAD42B /* KRAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42C6907F25022D3300BAD42B /* KRAssets.xcassets */; };
-		42C690B725022D3300BAD42B /* KRHintBubble.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C6908225022D3300BAD42B /* KRHintBubble.m */; };
-		42C690B825022D3300BAD42B /* KRPasswordKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C6908325022D3300BAD42B /* KRPasswordKeyboard.m */; };
-		42C690B925022D3300BAD42B /* KRLetterKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C6908625022D3300BAD42B /* KRLetterKeyboard.m */; };
-		42C690BA25022D3300BAD42B /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C6908925022D3300BAD42B /* NSLayoutConstraint+MASDebugAdditions.m */; };
-		42C690BB25022D3300BAD42B /* MASConstraintMaker+Forbearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C6908C25022D3300BAD42B /* MASConstraintMaker+Forbearance.m */; };
-		42C690BC25022D3300BAD42B /* NSArray+Sudoku.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C6909025022D3300BAD42B /* NSArray+Sudoku.m */; };
-		42C690BD25022D3300BAD42B /* MASForbearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C6909525022D3300BAD42B /* MASForbearance.m */; };
-		42C690BE25022D3300BAD42B /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C6909625022D3300BAD42B /* ViewController+MASAdditions.m */; };
-		42C690BF25022D3300BAD42B /* Remark in Resources */ = {isa = PBXBuildFile; fileRef = 42C6909825022D3300BAD42B /* Remark */; };
-		42C690C025022D3300BAD42B /* UIView+Forbearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C6909A25022D3300BAD42B /* UIView+Forbearance.m */; };
-		42C690C125022D3300BAD42B /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C6909C25022D3300BAD42B /* MASCompositeConstraint.m */; };
-		42C690C225022D3300BAD42B /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C6909D25022D3300BAD42B /* MASConstraintMaker.m */; };
-		42C690C325022D3300BAD42B /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C6909E25022D3300BAD42B /* MASLayoutConstraint.m */; };
-		42C690C425022D3300BAD42B /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C690A025022D3300BAD42B /* NSArray+MASAdditions.m */; };
-		42C690C525022D3300BAD42B /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C690A125022D3300BAD42B /* View+MASAdditions.m */; };
-		42C690C625022D3300BAD42B /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C690A525022D3300BAD42B /* MASConstraint.m */; };
-		42C690C725022D3300BAD42B /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C690A725022D3300BAD42B /* MASViewConstraint.m */; };
-		42C690C825022D3300BAD42B /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C690A925022D3300BAD42B /* MASViewAttribute.m */; };
-		42C690C925022D3300BAD42B /* KRBaseKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C690AA25022D3300BAD42B /* KRBaseKeyboard.m */; };
-		42C690CA25022D3300BAD42B /* KRNumberKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C690AB25022D3300BAD42B /* KRNumberKeyboard.m */; };
-		42C690CB25022D3300BAD42B /* keyboard-click.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 42C690AE25022D3300BAD42B /* keyboard-click.aiff */; };
-		42C690CC25022D3300BAD42B /* keyboard-click2.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 42C690AF25022D3300BAD42B /* keyboard-click2.aiff */; };
-		42C690CD25022D3300BAD42B /* KRSymbolKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C690B325022D3300BAD42B /* KRSymbolKeyboard.m */; };
-		42C690CE25022D3300BAD42B /* KRKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C690B525022D3300BAD42B /* KRKeyboard.m */; };
 		42F3579525061898008CE547 /* BackNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3579425061898008CE547 /* BackNavigationBar.m */; };
 		42F3579825062FC3008CE547 /* WebViewJavascriptBridge.js in Resources */ = {isa = PBXBuildFile; fileRef = 42F3579725062FC3008CE547 /* WebViewJavascriptBridge.js */; };
 		42F357A725062FCF008CE547 /* ModuleContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3579F25062FCF008CE547 /* ModuleContext.m */; };
@@ -102,58 +77,6 @@
 		42C690592501E94E00BAD42B /* YJBridge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = YJBridge.html; sourceTree = "<group>"; };
 		42C690622502283500BAD42B /* NSMutableArray+QueueAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+QueueAdditions.h"; sourceTree = "<group>"; };
 		42C690632502283500BAD42B /* NSMutableArray+QueueAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+QueueAdditions.m"; sourceTree = "<group>"; };
-		42C6907F25022D3300BAD42B /* KRAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = KRAssets.xcassets; sourceTree = "<group>"; };
-		42C6908125022D3300BAD42B /* Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
-		42C6908225022D3300BAD42B /* KRHintBubble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRHintBubble.m; sourceTree = "<group>"; };
-		42C6908325022D3300BAD42B /* KRPasswordKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRPasswordKeyboard.m; sourceTree = "<group>"; };
-		42C6908425022D3300BAD42B /* KRNumberKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRNumberKeyboard.h; sourceTree = "<group>"; };
-		42C6908525022D3300BAD42B /* KRSymbolKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRSymbolKeyboard.h; sourceTree = "<group>"; };
-		42C6908625022D3300BAD42B /* KRLetterKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRLetterKeyboard.m; sourceTree = "<group>"; };
-		42C6908825022D3300BAD42B /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
-		42C6908925022D3300BAD42B /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
-		42C6908A25022D3300BAD42B /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
-		42C6908B25022D3300BAD42B /* UIView+Forbearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Forbearance.h"; sourceTree = "<group>"; };
-		42C6908C25022D3300BAD42B /* MASConstraintMaker+Forbearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MASConstraintMaker+Forbearance.m"; sourceTree = "<group>"; };
-		42C6908D25022D3300BAD42B /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
-		42C6908E25022D3300BAD42B /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		42C6908F25022D3300BAD42B /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
-		42C6909025022D3300BAD42B /* NSArray+Sudoku.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Sudoku.m"; sourceTree = "<group>"; };
-		42C6909125022D3300BAD42B /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
-		42C6909225022D3300BAD42B /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
-		42C6909325022D3300BAD42B /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
-		42C6909425022D3300BAD42B /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
-		42C6909525022D3300BAD42B /* MASForbearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASForbearance.m; sourceTree = "<group>"; };
-		42C6909625022D3300BAD42B /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
-		42C6909725022D3300BAD42B /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
-		42C6909825022D3300BAD42B /* Remark */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Remark; sourceTree = "<group>"; };
-		42C6909925022D3300BAD42B /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
-		42C6909A25022D3300BAD42B /* UIView+Forbearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Forbearance.m"; sourceTree = "<group>"; };
-		42C6909B25022D3300BAD42B /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
-		42C6909C25022D3300BAD42B /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
-		42C6909D25022D3300BAD42B /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
-		42C6909E25022D3300BAD42B /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
-		42C6909F25022D3300BAD42B /* MASConstraintMaker+Forbearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraintMaker+Forbearance.h"; sourceTree = "<group>"; };
-		42C690A025022D3300BAD42B /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
-		42C690A125022D3300BAD42B /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
-		42C690A225022D3300BAD42B /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		42C690A325022D3300BAD42B /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
-		42C690A425022D3300BAD42B /* NSArray+Sudoku.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Sudoku.h"; sourceTree = "<group>"; };
-		42C690A525022D3300BAD42B /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
-		42C690A625022D3300BAD42B /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
-		42C690A725022D3300BAD42B /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
-		42C690A825022D3300BAD42B /* MASForbearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASForbearance.h; sourceTree = "<group>"; };
-		42C690A925022D3300BAD42B /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
-		42C690AA25022D3300BAD42B /* KRBaseKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRBaseKeyboard.m; sourceTree = "<group>"; };
-		42C690AB25022D3300BAD42B /* KRNumberKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRNumberKeyboard.m; sourceTree = "<group>"; };
-		42C690AC25022D3300BAD42B /* KRPasswordKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRPasswordKeyboard.h; sourceTree = "<group>"; };
-		42C690AE25022D3300BAD42B /* keyboard-click.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = "keyboard-click.aiff"; sourceTree = "<group>"; };
-		42C690AF25022D3300BAD42B /* keyboard-click2.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = "keyboard-click2.aiff"; sourceTree = "<group>"; };
-		42C690B025022D3300BAD42B /* KRHintBubble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRHintBubble.h; sourceTree = "<group>"; };
-		42C690B125022D3300BAD42B /* KRBaseKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRBaseKeyboard.h; sourceTree = "<group>"; };
-		42C690B225022D3300BAD42B /* KRLetterKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRLetterKeyboard.h; sourceTree = "<group>"; };
-		42C690B325022D3300BAD42B /* KRSymbolKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRSymbolKeyboard.m; sourceTree = "<group>"; };
-		42C690B425022D3300BAD42B /* KRKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRKeyboard.h; sourceTree = "<group>"; };
-		42C690B525022D3300BAD42B /* KRKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRKeyboard.m; sourceTree = "<group>"; };
 		42F3579325061898008CE547 /* BackNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackNavigationBar.h; sourceTree = "<group>"; };
 		42F3579425061898008CE547 /* BackNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackNavigationBar.m; sourceTree = "<group>"; };
 		42F3579725062FC3008CE547 /* WebViewJavascriptBridge.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = WebViewJavascriptBridge.js; sourceTree = "<group>"; };
@@ -354,92 +277,8 @@
 			isa = PBXGroup;
 			children = (
 				42F3579225061898008CE547 /* BackNavigationBar */,
-				42C6907E25022D3300BAD42B /* KRKeyboard */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		42C6907E25022D3300BAD42B /* KRKeyboard */ = {
-			isa = PBXGroup;
-			children = (
-				42C6907F25022D3300BAD42B /* KRAssets.xcassets */,
-				42C6908025022D3300BAD42B /* Code */,
-				42C690B425022D3300BAD42B /* KRKeyboard.h */,
-				42C690B525022D3300BAD42B /* KRKeyboard.m */,
-			);
-			path = KRKeyboard;
-			sourceTree = "<group>";
-		};
-		42C6908025022D3300BAD42B /* Code */ = {
-			isa = PBXGroup;
-			children = (
-				42C6908125022D3300BAD42B /* Define.h */,
-				42C690B125022D3300BAD42B /* KRBaseKeyboard.h */,
-				42C690AA25022D3300BAD42B /* KRBaseKeyboard.m */,
-				42C690B025022D3300BAD42B /* KRHintBubble.h */,
-				42C6908225022D3300BAD42B /* KRHintBubble.m */,
-				42C690B225022D3300BAD42B /* KRLetterKeyboard.h */,
-				42C6908625022D3300BAD42B /* KRLetterKeyboard.m */,
-				42C6908425022D3300BAD42B /* KRNumberKeyboard.h */,
-				42C690AB25022D3300BAD42B /* KRNumberKeyboard.m */,
-				42C690AC25022D3300BAD42B /* KRPasswordKeyboard.h */,
-				42C6908325022D3300BAD42B /* KRPasswordKeyboard.m */,
-				42C6908525022D3300BAD42B /* KRSymbolKeyboard.h */,
-				42C690B325022D3300BAD42B /* KRSymbolKeyboard.m */,
-				42C6908725022D3300BAD42B /* Masonry */,
-				42C690AD25022D3300BAD42B /* Resource */,
-			);
-			path = Code;
-			sourceTree = "<group>";
-		};
-		42C6908725022D3300BAD42B /* Masonry */ = {
-			isa = PBXGroup;
-			children = (
-				42C6908825022D3300BAD42B /* MASCompositeConstraint.h */,
-				42C6909C25022D3300BAD42B /* MASCompositeConstraint.m */,
-				42C6909925022D3300BAD42B /* MASConstraint.h */,
-				42C690A525022D3300BAD42B /* MASConstraint.m */,
-				42C6908A25022D3300BAD42B /* MASConstraint+Private.h */,
-				42C6908F25022D3300BAD42B /* MASConstraintMaker.h */,
-				42C6909D25022D3300BAD42B /* MASConstraintMaker.m */,
-				42C6909F25022D3300BAD42B /* MASConstraintMaker+Forbearance.h */,
-				42C6908C25022D3300BAD42B /* MASConstraintMaker+Forbearance.m */,
-				42C690A825022D3300BAD42B /* MASForbearance.h */,
-				42C6909525022D3300BAD42B /* MASForbearance.m */,
-				42C6908D25022D3300BAD42B /* MASLayoutConstraint.h */,
-				42C6909E25022D3300BAD42B /* MASLayoutConstraint.m */,
-				42C690A325022D3300BAD42B /* Masonry.h */,
-				42C6909325022D3300BAD42B /* MASUtilities.h */,
-				42C6909425022D3300BAD42B /* MASViewAttribute.h */,
-				42C690A925022D3300BAD42B /* MASViewAttribute.m */,
-				42C6909725022D3300BAD42B /* MASViewConstraint.h */,
-				42C690A725022D3300BAD42B /* MASViewConstraint.m */,
-				42C6909225022D3300BAD42B /* NSArray+MASAdditions.h */,
-				42C690A025022D3300BAD42B /* NSArray+MASAdditions.m */,
-				42C6908E25022D3300BAD42B /* NSArray+MASShorthandAdditions.h */,
-				42C690A425022D3300BAD42B /* NSArray+Sudoku.h */,
-				42C6909025022D3300BAD42B /* NSArray+Sudoku.m */,
-				42C6909B25022D3300BAD42B /* NSLayoutConstraint+MASDebugAdditions.h */,
-				42C6908925022D3300BAD42B /* NSLayoutConstraint+MASDebugAdditions.m */,
-				42C6909825022D3300BAD42B /* Remark */,
-				42C6908B25022D3300BAD42B /* UIView+Forbearance.h */,
-				42C6909A25022D3300BAD42B /* UIView+Forbearance.m */,
-				42C6909125022D3300BAD42B /* View+MASAdditions.h */,
-				42C690A125022D3300BAD42B /* View+MASAdditions.m */,
-				42C690A225022D3300BAD42B /* View+MASShorthandAdditions.h */,
-				42C690A625022D3300BAD42B /* ViewController+MASAdditions.h */,
-				42C6909625022D3300BAD42B /* ViewController+MASAdditions.m */,
-			);
-			path = Masonry;
-			sourceTree = "<group>";
-		};
-		42C690AD25022D3300BAD42B /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				42C690AE25022D3300BAD42B /* keyboard-click.aiff */,
-				42C690AF25022D3300BAD42B /* keyboard-click2.aiff */,
-			);
-			path = Resource;
 			sourceTree = "<group>";
 		};
 		42F3579225061898008CE547 /* BackNavigationBar */ = {
@@ -573,11 +412,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42C690CC25022D3300BAD42B /* keyboard-click2.aiff in Resources */,
-				42C690BF25022D3300BAD42B /* Remark in Resources */,
 				42C6905A2501E94E00BAD42B /* YJBridge.html in Resources */,
-				42C690B625022D3300BAD42B /* KRAssets.xcassets in Resources */,
-				42C690CB25022D3300BAD42B /* keyboard-click.aiff in Resources */,
 				42ABDCFC24F8B7AD00E7ADF8 /* LaunchScreen.storyboard in Resources */,
 				42ABDCF924F8B7AD00E7ADF8 /* Assets.xcassets in Resources */,
 				42F3579825062FC3008CE547 /* WebViewJavascriptBridge.js in Resources */,
@@ -633,51 +468,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42C690C725022D3300BAD42B /* MASViewConstraint.m in Sources */,
 				42AE3EFE24FE3D1E00675837 /* MobileSimModel.m in Sources */,
 				42AE3EF724FE3CA300675837 /* UIDevice+IdentifierAddition.m in Sources */,
 				42F357A725062FCF008CE547 /* ModuleContext.m in Sources */,
 				425F31AB24FF9E240041858A /* YJHttpRequest.m in Sources */,
 				42ABDCEE24F8B7AA00E7ADF8 /* AppDelegate.m in Sources */,
-				42C690C825022D3300BAD42B /* MASViewAttribute.m in Sources */,
-				42C690C125022D3300BAD42B /* MASCompositeConstraint.m in Sources */,
-				42C690BC25022D3300BAD42B /* NSArray+Sudoku.m in Sources */,
 				42C690642502283500BAD42B /* NSMutableArray+QueueAdditions.m in Sources */,
 				42F357AB25077F27008CE547 /* ModuleNative.m in Sources */,
-				42C690BD25022D3300BAD42B /* MASForbearance.m in Sources */,
-				42C690B825022D3300BAD42B /* KRPasswordKeyboard.m in Sources */,
 				42ABDD2824FC9A7900E7ADF8 /* MainViewController.m in Sources */,
-				42C690C525022D3300BAD42B /* View+MASAdditions.m in Sources */,
-				42C690C325022D3300BAD42B /* MASLayoutConstraint.m in Sources */,
 				42F3579525061898008CE547 /* BackNavigationBar.m in Sources */,
-				42C690C425022D3300BAD42B /* NSArray+MASAdditions.m in Sources */,
-				42C690C625022D3300BAD42B /* MASConstraint.m in Sources */,
 				42FFAFE424FF2C4F00199C7E /* WMMenuItem.m in Sources */,
-				42C690CA25022D3300BAD42B /* KRNumberKeyboard.m in Sources */,
-				42C690BA25022D3300BAD42B /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
-				42C690B925022D3300BAD42B /* KRLetterKeyboard.m in Sources */,
-				42C690CE25022D3300BAD42B /* KRKeyboard.m in Sources */,
 				42FFAFE724FF2C4F00199C7E /* WMProgressView.m in Sources */,
-				42C690CD25022D3300BAD42B /* KRSymbolKeyboard.m in Sources */,
 				42FFAFE224FF2C4F00199C7E /* WMPageController.m in Sources */,
 				42AE3EF324FE3B7400675837 /* UserAgentUtil.m in Sources */,
 				42AE3EFF24FE3D1E00675837 /* MobileSimUtil.m in Sources */,
-				42C690C225022D3300BAD42B /* MASConstraintMaker.m in Sources */,
-				42C690BE25022D3300BAD42B /* ViewController+MASAdditions.m in Sources */,
 				42AE3F0224FE3D4200675837 /* NSString+MD5.m in Sources */,
 				425F31AC24FF9E240041858A /* YJJsonKit.m in Sources */,
 				42FFAFE524FF2C4F00199C7E /* WMScrollView.m in Sources */,
 				42ABDD4624FCFA4F00E7ADF8 /* BaseViewController.m in Sources */,
 				42FFAFE324FF2C4F00199C7E /* UIViewController+WMPageController.m in Sources */,
-				42C690C025022D3300BAD42B /* UIView+Forbearance.m in Sources */,
 				42AE3EEC24FE2B7000675837 /* WebViewViewController.m in Sources */,
 				42FFAFE624FF2C4F00199C7E /* WMMenuView.m in Sources */,
 				42ABDD0C24F8B8D300E7ADF8 /* RootViewController.m in Sources */,
 				42ABDCFF24F8B7AD00E7ADF8 /* main.m in Sources */,
 				42ABDD3724FCD55000E7ADF8 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
-				42C690C925022D3300BAD42B /* KRBaseKeyboard.m in Sources */,
-				42C690BB25022D3300BAD42B /* MASConstraintMaker+Forbearance.m in Sources */,
-				42C690B725022D3300BAD42B /* KRHintBubble.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
