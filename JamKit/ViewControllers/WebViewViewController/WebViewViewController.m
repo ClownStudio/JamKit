@@ -29,7 +29,6 @@ static NSString *_lastPage;//只记录无逻辑
     UIActivityIndicatorView *_indicatorView;
     NSMutableArray *_targets;
     NSURL *_originUrl;
-    BOOL _isTop;
 }
 
 -(id)initWithUrl:(NSURL *)url{
@@ -122,9 +121,9 @@ static NSString *_lastPage;//只记录无逻辑
     [self.webView.configuration.userContentController addUserScript:userScript];
 }
 
-- (void)registerModule {
+- (void)registerModule{
     ModuleContext *context = [ModuleContext new];
-    context.vc = self;
+    context.viewController = self;
     context.scrollView = self.webView.scrollView;
     context.name = @"上下文";
     

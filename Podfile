@@ -7,4 +7,6 @@ target 'JamKit' do
     pod 'AFNetworking', '~> 3.2.1'
     pod 'IQKeyboardManager', '~> 6.5.6'
     pod 'KKJSBridge', '~> 1.1.5'
+    pod 'Masonry', '~> 1.1.0'
+    pod 'YYKit', '~> 1.0.9'
 end

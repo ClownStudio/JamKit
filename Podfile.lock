@@ -16,23 +16,33 @@ PODS:
     - AFNetworking/NSURLSession
   - IQKeyboardManager (6.5.6)
   - KKJSBridge (1.1.5)
+  - Masonry (1.1.0)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.2.1)
   - IQKeyboardManager (~> 6.5.6)
   - KKJSBridge (~> 1.1.5)
+  - Masonry (~> 1.1.0)
+  - YYKit (~> 1.0.9)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - IQKeyboardManager
     - KKJSBridge
+    - Masonry
+    - YYKit
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
   KKJSBridge: fc41c801de7cdf6379aee4033c0d851dd50a930b
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 24709fed60eb00be2c2af46cf47e274354433c96
+PODFILE CHECKSUM: 040c97234c6097f9270305964bfe44b0edf8fda1
 
 COCOAPODS: 1.9.3

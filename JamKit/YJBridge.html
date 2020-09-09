@@ -30,7 +30,12 @@
     <body>
         <script type="text/javascript">
             function showNumberKeyboard(){
-                window.KKJSBridge.call("native", "getNativeTitle",{"a":"123","b":"456"}, function(res) {
+                window.KKJSBridge.call("native", "showNumberKeyboard",{}, function() {
+                    
+                });
+            }
+            function showParamsContent(){
+                window.KKJSBridge.call("native", "showParamsContent",{"a":"123","b":"456"}, function(res) {
                     window.alert(res.title);
                 });
             }
@@ -42,6 +47,7 @@
                 </div>
                 <div class="info-group">
                     <button onclick="showNumberKeyboard()">弹出数字键盘</button>
+                    <button onclick="showParamsContent()">显示传入的参数</button>
                 </div>
             </div>
         </div>

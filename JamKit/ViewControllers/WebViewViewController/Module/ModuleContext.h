@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ModuleContext : NSObject
 
-@property (nonatomic, weak) UIViewController *vc;
+@property (nonatomic, weak) UIViewController *viewController;
 @property (nonatomic, weak) UIScrollView *scrollView;
 @property (nonatomic, copy) NSString *name;
 

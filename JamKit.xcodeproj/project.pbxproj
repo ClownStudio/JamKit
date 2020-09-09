@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		421183B02508B72300AB3A45 /* FYNumberPadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 421183A52508B72300AB3A45 /* FYNumberPadModel.m */; };
+		421183B12508B72300AB3A45 /* FYNumberKeybordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 421183A62508B72300AB3A45 /* FYNumberKeybordView.m */; };
+		421183B22508B72300AB3A45 /* FYCursorNumberKeybordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 421183A82508B72300AB3A45 /* FYCursorNumberKeybordView.m */; };
+		421183B32508B72300AB3A45 /* FYIDPadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 421183AC2508B72300AB3A45 /* FYIDPadView.m */; };
+		421183B42508B72300AB3A45 /* FYKeybordFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 421183AD2508B72300AB3A45 /* FYKeybordFactory.m */; };
+		421183B52508B72300AB3A45 /* icon_kb_del@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 421183AE2508B72300AB3A45 /* icon_kb_del@3x.png */; };
 		425F31AB24FF9E240041858A /* YJHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 425F31A724FF9E240041858A /* YJHttpRequest.m */; };
 		425F31AC24FF9E240041858A /* YJJsonKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 425F31A924FF9E240041858A /* YJJsonKit.m */; };
 		42ABDCEE24F8B7AA00E7ADF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42ABDCED24F8B7AA00E7ADF8 /* AppDelegate.m */; };
@@ -40,6 +46,18 @@
 
 /* Begin PBXFileReference section */
 		1D8C4175C81B10EDFEF713CF /* libPods-JamKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JamKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		421183A32508B72300AB3A45 /* FYNumberKeybordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYNumberKeybordView.h; sourceTree = "<group>"; };
+		421183A42508B72300AB3A45 /* FYCursorNumberKeybordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYCursorNumberKeybordView.h; sourceTree = "<group>"; };
+		421183A52508B72300AB3A45 /* FYNumberPadModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYNumberPadModel.m; sourceTree = "<group>"; };
+		421183A62508B72300AB3A45 /* FYNumberKeybordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYNumberKeybordView.m; sourceTree = "<group>"; };
+		421183A72508B72300AB3A45 /* FYNumberPadModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYNumberPadModel.h; sourceTree = "<group>"; };
+		421183A82508B72300AB3A45 /* FYCursorNumberKeybordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYCursorNumberKeybordView.m; sourceTree = "<group>"; };
+		421183A92508B72300AB3A45 /* FYKeybordEnumFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYKeybordEnumFile.h; sourceTree = "<group>"; };
+		421183AB2508B72300AB3A45 /* FYIDPadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYIDPadView.h; sourceTree = "<group>"; };
+		421183AC2508B72300AB3A45 /* FYIDPadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYIDPadView.m; sourceTree = "<group>"; };
+		421183AD2508B72300AB3A45 /* FYKeybordFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYKeybordFactory.m; sourceTree = "<group>"; };
+		421183AE2508B72300AB3A45 /* icon_kb_del@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_kb_del@3x.png"; sourceTree = "<group>"; };
+		421183AF2508B72300AB3A45 /* FYKeybordFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYKeybordFactory.h; sourceTree = "<group>"; };
 		425F31A624FF9E240041858A /* YJHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJHttpRequest.h; sourceTree = "<group>"; };
 		425F31A724FF9E240041858A /* YJHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJHttpRequest.m; sourceTree = "<group>"; };
 		425F31A924FF9E240041858A /* YJJsonKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJJsonKit.m; sourceTree = "<group>"; };
@@ -112,6 +130,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		421183A12508B72300AB3A45 /* FYKeybord */ = {
+			isa = PBXGroup;
+			children = (
+				421183A22508B72300AB3A45 /* FYNumberPad */,
+				421183A92508B72300AB3A45 /* FYKeybordEnumFile.h */,
+				421183AA2508B72300AB3A45 /* FYIDPad */,
+				421183AD2508B72300AB3A45 /* FYKeybordFactory.m */,
+				421183AE2508B72300AB3A45 /* icon_kb_del@3x.png */,
+				421183AF2508B72300AB3A45 /* FYKeybordFactory.h */,
+			);
+			path = FYKeybord;
+			sourceTree = "<group>";
+		};
+		421183A22508B72300AB3A45 /* FYNumberPad */ = {
+			isa = PBXGroup;
+			children = (
+				421183A32508B72300AB3A45 /* FYNumberKeybordView.h */,
+				421183A42508B72300AB3A45 /* FYCursorNumberKeybordView.h */,
+				421183A52508B72300AB3A45 /* FYNumberPadModel.m */,
+				421183A62508B72300AB3A45 /* FYNumberKeybordView.m */,
+				421183A72508B72300AB3A45 /* FYNumberPadModel.h */,
+				421183A82508B72300AB3A45 /* FYCursorNumberKeybordView.m */,
+			);
+			path = FYNumberPad;
+			sourceTree = "<group>";
+		};
+		421183AA2508B72300AB3A45 /* FYIDPad */ = {
+			isa = PBXGroup;
+			children = (
+				421183AB2508B72300AB3A45 /* FYIDPadView.h */,
+				421183AC2508B72300AB3A45 /* FYIDPadView.m */,
+			);
+			path = FYIDPad;
+			sourceTree = "<group>";
+		};
 		425F31A524FF9E240041858A /* YJHttpRequest */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,6 +329,7 @@
 		42C6907D25022D3300BAD42B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				421183A12508B72300AB3A45 /* FYKeybord */,
 				42F3579225061898008CE547 /* BackNavigationBar */,
 			);
 			path = Views;
@@ -416,6 +470,7 @@
 				42ABDCFC24F8B7AD00E7ADF8 /* LaunchScreen.storyboard in Resources */,
 				42ABDCF924F8B7AD00E7ADF8 /* Assets.xcassets in Resources */,
 				42F3579825062FC3008CE547 /* WebViewJavascriptBridge.js in Resources */,
+				421183B52508B72300AB3A45 /* icon_kb_del@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +523,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				421183B22508B72300AB3A45 /* FYCursorNumberKeybordView.m in Sources */,
 				42AE3EFE24FE3D1E00675837 /* MobileSimModel.m in Sources */,
 				42AE3EF724FE3CA300675837 /* UIDevice+IdentifierAddition.m in Sources */,
 				42F357A725062FCF008CE547 /* ModuleContext.m in Sources */,
@@ -478,16 +534,20 @@
 				42ABDD2824FC9A7900E7ADF8 /* MainViewController.m in Sources */,
 				42F3579525061898008CE547 /* BackNavigationBar.m in Sources */,
 				42FFAFE424FF2C4F00199C7E /* WMMenuItem.m in Sources */,
+				421183B42508B72300AB3A45 /* FYKeybordFactory.m in Sources */,
 				42FFAFE724FF2C4F00199C7E /* WMProgressView.m in Sources */,
 				42FFAFE224FF2C4F00199C7E /* WMPageController.m in Sources */,
 				42AE3EF324FE3B7400675837 /* UserAgentUtil.m in Sources */,
 				42AE3EFF24FE3D1E00675837 /* MobileSimUtil.m in Sources */,
 				42AE3F0224FE3D4200675837 /* NSString+MD5.m in Sources */,
+				421183B32508B72300AB3A45 /* FYIDPadView.m in Sources */,
 				425F31AC24FF9E240041858A /* YJJsonKit.m in Sources */,
 				42FFAFE524FF2C4F00199C7E /* WMScrollView.m in Sources */,
 				42ABDD4624FCFA4F00E7ADF8 /* BaseViewController.m in Sources */,
 				42FFAFE324FF2C4F00199C7E /* UIViewController+WMPageController.m in Sources */,
 				42AE3EEC24FE2B7000675837 /* WebViewViewController.m in Sources */,
+				421183B02508B72300AB3A45 /* FYNumberPadModel.m in Sources */,
+				421183B12508B72300AB3A45 /* FYNumberKeybordView.m in Sources */,
 				42FFAFE624FF2C4F00199C7E /* WMMenuView.m in Sources */,
 				42ABDD0C24F8B8D300E7ADF8 /* RootViewController.m in Sources */,
 				42ABDCFF24F8B7AD00E7ADF8 /* main.m in Sources */,
