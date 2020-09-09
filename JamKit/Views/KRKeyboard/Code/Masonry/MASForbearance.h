@@ -42,10 +42,10 @@ typedef NS_OPTIONS(NSUInteger, MASForbearanceRule) {
 
 // Priority
 - (MASForbearance *(^)(MASLayoutPriority priority))priority;
-- (MASForbearance *(^)())priorityRequired;
-- (MASForbearance *(^)())priorityHigh;
-- (MASForbearance *(^)())priorityMedium;
-- (MASForbearance *(^)())priorityLow;
-- (MASForbearance *(^)())priorityFittingSizeLevel;
+- (MASForbearance *(^)(void))priorityRequired;
+- (MASForbearance *(^)(void))priorityHigh;
+- (MASForbearance *(^)(void))priorityMedium;
+- (MASForbearance *(^)(void))priorityLow;
+- (MASForbearance *(^)(void))priorityFittingSizeLevel;
 
 @end

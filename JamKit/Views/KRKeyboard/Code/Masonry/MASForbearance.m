@@ -32,27 +32,27 @@
         return [self.delegate forbearance:self priority:priority];
     };
 }
-- (MASForbearance *(^)())priorityRequired {
+- (MASForbearance *(^)(void))priorityRequired {
     return ^id{
         return self.priority(MASLayoutPriorityRequired);
     };
 }
-- (MASForbearance *(^)())priorityHigh {
+- (MASForbearance *(^)(void))priorityHigh {
     return ^id{
         return self.priority(MASLayoutPriorityDefaultHigh);
     };
 }
-- (MASForbearance *(^)())priorityMedium {
+- (MASForbearance *(^)(void))priorityMedium {
     return ^id{
         return self.priority(MASLayoutPriorityDefaultMedium);
     };
 }
-- (MASForbearance *(^)())priorityLow {
+- (MASForbearance *(^)(void))priorityLow {
     return ^id{
         return self.priority(MASLayoutPriorityDefaultLow);
     };
 }
-- (MASForbearance *(^)())priorityFittingSizeLevel {
+- (MASForbearance *(^)(void))priorityFittingSizeLevel {
     return ^id{
         return self.priority(MASLayoutPriorityFittingSizeLevel);
     };
