@@ -12,13 +12,17 @@
 #import "FYKeybordFactory.h"
 #import <Masonry.h>
 
-@interface ModuleNative()<KKJSBridgeModule>
+typedef void (^KeyBoardResponseBlock)(NSDictionary *responseData);
+
+@interface ModuleNative()<KKJSBridgeModule,FYNumberKeybordViewDelegate>
 
 @property (nonatomic, weak) ModuleContext *context;
 
 @end
 
-@implementation ModuleNative
+@implementation ModuleNative{
+     KeyBoardResponseBlock _responseCallback;
+}
 
 + (nonnull NSString *)moduleName {
     return @"native";
@@ -39,7 +43,8 @@
 }
 
 - (void)showNumberKeyboard:(KKJSBridgeEngine *)engine params:(NSDictionary *)params responseCallback:(void (^)(NSDictionary *responseData))responseCallback {
-    FYNumberKeybordView *keybordView = [FYKeybordFactory fy_createNumberKeybordViewWithNumberPadType:randomNumberPadType];
+    FYNumberKeybordView *keybordView = [FYKeybordFactory fy_createNumberKeybordViewWithNumberPadType:normalNumberPadType];
+    keybordView.fyNumberKeybordDelegate = self;
     [[UIApplication sharedApplication].keyWindow addSubview:keybordView];
     [keybordView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.left.right.equalTo(@0);
@@ -50,6 +55,19 @@
         }
         make.height.equalTo(@247);
     }];
+    _responseCallback = responseCallback;
+}
+
+- (void)fyNumberKeybordView:(FYNumberKeybordView *)numberKeybordView clickNumberStr:(NSString *)clickNumberStr{
+    if (_responseCallback) {
+        _responseCallback(@{@"value":clickNumberStr});
+    }
+}
+
+- (void)clickDeleteButtonWithFYNumberKeybordView:(FYNumberKeybordView *)numberKeybordView{
+//    if (_responseCallback) {
+//        _responseCallback(clickNumberStr);
+//    }
 }
 
 @end

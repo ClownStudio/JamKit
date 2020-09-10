@@ -29,10 +29,8 @@
     </head>
     <body>
         <script type="text/javascript">
-            function showNumberKeyboard(){
-                window.KKJSBridge.call("native", "showNumberKeyboard",{}, function() {
-                    
-                });
+            function showNumberKeyboard(func){
+                window.KKJSBridge.call("native", "showNumberKeyboard",{},func);
             }
             function showParamsContent(){
                 window.KKJSBridge.call("native", "showParamsContent",{"a":"123","b":"456"}, function(res) {
@@ -46,8 +44,14 @@
                     NativePlugin 方法调用
                 </div>
                 <div class="info-group">
-                    <button onclick="showNumberKeyboard()">弹出数字键盘</button>
                     <button onclick="showParamsContent()">显示传入的参数</button>
+                </div>
+                <div class="info-group">
+                    <input id="text" type="text" value="请输入密码" readonly="readonly" onclick="showNumberKeyboard(function(res) {
+                        var input = document.getElementById('x');
+                        input.value += res.value;
+                    })" style="-webkit-user-select:none">
+                    <input id="num" type="text" value="请输入数字" readonly onclick="OCModel.callKeyboardType('num','abc')" style="-webkit-user-select:none">
                 </div>
             </div>
         </div>

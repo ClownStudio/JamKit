@@ -15,6 +15,15 @@
 		421183B52508B72300AB3A45 /* icon_kb_del@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 421183AE2508B72300AB3A45 /* icon_kb_del@3x.png */; };
 		425F31AB24FF9E240041858A /* YJHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 425F31A724FF9E240041858A /* YJHttpRequest.m */; };
 		425F31AC24FF9E240041858A /* YJJsonKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 425F31A924FF9E240041858A /* YJJsonKit.m */; };
+		42842516250A2A0500BFB3CC /* hide@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4284250B250A2A0500BFB3CC /* hide@3x.png */; };
+		42842517250A2A0500BFB3CC /* hide@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4284250C250A2A0500BFB3CC /* hide@2x.png */; };
+		42842518250A2A0500BFB3CC /* SafeKBInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4284250F250A2A0500BFB3CC /* SafeKBInputView.m */; };
+		42842519250A2A0500BFB3CC /* del.png in Resources */ = {isa = PBXBuildFile; fileRef = 42842510250A2A0500BFB3CC /* del.png */; };
+		4284251A250A2A0500BFB3CC /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 42842511250A2A0500BFB3CC /* logo.png */; };
+		4284251B250A2A0500BFB3CC /* del@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42842512250A2A0500BFB3CC /* del@2x.png */; };
+		4284251C250A2A0500BFB3CC /* SafeKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 42842513250A2A0500BFB3CC /* SafeKeyboard.m */; };
+		4284251D250A2A0500BFB3CC /* SafeTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 42842514250A2A0500BFB3CC /* SafeTextField.m */; };
+		4284251E250A2A0500BFB3CC /* log1o.png in Resources */ = {isa = PBXBuildFile; fileRef = 42842515250A2A0500BFB3CC /* log1o.png */; };
 		42ABDCEE24F8B7AA00E7ADF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42ABDCED24F8B7AA00E7ADF8 /* AppDelegate.m */; };
 		42ABDCF924F8B7AD00E7ADF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42ABDCF824F8B7AD00E7ADF8 /* Assets.xcassets */; };
 		42ABDCFC24F8B7AD00E7ADF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42ABDCFA24F8B7AD00E7ADF8 /* LaunchScreen.storyboard */; };
@@ -62,6 +71,18 @@
 		425F31A724FF9E240041858A /* YJHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJHttpRequest.m; sourceTree = "<group>"; };
 		425F31A924FF9E240041858A /* YJJsonKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJJsonKit.m; sourceTree = "<group>"; };
 		425F31AA24FF9E240041858A /* YJJsonKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJJsonKit.h; sourceTree = "<group>"; };
+		42842509250A2A0500BFB3CC /* SafeKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeKeyboard.h; sourceTree = "<group>"; };
+		4284250A250A2A0500BFB3CC /* SafeTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeTextField.h; sourceTree = "<group>"; };
+		4284250B250A2A0500BFB3CC /* hide@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hide@3x.png"; sourceTree = "<group>"; };
+		4284250C250A2A0500BFB3CC /* hide@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hide@2x.png"; sourceTree = "<group>"; };
+		4284250E250A2A0500BFB3CC /* SafeKBInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeKBInputView.h; sourceTree = "<group>"; };
+		4284250F250A2A0500BFB3CC /* SafeKBInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeKBInputView.m; sourceTree = "<group>"; };
+		42842510250A2A0500BFB3CC /* del.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = del.png; sourceTree = "<group>"; };
+		42842511250A2A0500BFB3CC /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		42842512250A2A0500BFB3CC /* del@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "del@2x.png"; sourceTree = "<group>"; };
+		42842513250A2A0500BFB3CC /* SafeKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeKeyboard.m; sourceTree = "<group>"; };
+		42842514250A2A0500BFB3CC /* SafeTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeTextField.m; sourceTree = "<group>"; };
+		42842515250A2A0500BFB3CC /* log1o.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = log1o.png; sourceTree = "<group>"; };
 		42ABDCE924F8B7AA00E7ADF8 /* JamKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JamKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42ABDCEC24F8B7AA00E7ADF8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		42ABDCED24F8B7AA00E7ADF8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -181,6 +202,33 @@
 				425F31AA24FF9E240041858A /* YJJsonKit.h */,
 			);
 			path = YJJsonKit;
+			sourceTree = "<group>";
+		};
+		42842508250A2A0500BFB3CC /* Safekeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				42842509250A2A0500BFB3CC /* SafeKeyboard.h */,
+				4284250A250A2A0500BFB3CC /* SafeTextField.h */,
+				4284250B250A2A0500BFB3CC /* hide@3x.png */,
+				4284250C250A2A0500BFB3CC /* hide@2x.png */,
+				4284250D250A2A0500BFB3CC /* SafeKBInputView */,
+				42842510250A2A0500BFB3CC /* del.png */,
+				42842511250A2A0500BFB3CC /* logo.png */,
+				42842512250A2A0500BFB3CC /* del@2x.png */,
+				42842513250A2A0500BFB3CC /* SafeKeyboard.m */,
+				42842514250A2A0500BFB3CC /* SafeTextField.m */,
+				42842515250A2A0500BFB3CC /* log1o.png */,
+			);
+			path = Safekeyboard;
+			sourceTree = "<group>";
+		};
+		4284250D250A2A0500BFB3CC /* SafeKBInputView */ = {
+			isa = PBXGroup;
+			children = (
+				4284250E250A2A0500BFB3CC /* SafeKBInputView.h */,
+				4284250F250A2A0500BFB3CC /* SafeKBInputView.m */,
+			);
+			path = SafeKBInputView;
 			sourceTree = "<group>";
 		};
 		42ABDCE024F8B7AA00E7ADF8 = {
@@ -329,6 +377,7 @@
 		42C6907D25022D3300BAD42B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				42842508250A2A0500BFB3CC /* Safekeyboard */,
 				421183A12508B72300AB3A45 /* FYKeybord */,
 				42F3579225061898008CE547 /* BackNavigationBar */,
 			);
@@ -466,11 +515,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4284251E250A2A0500BFB3CC /* log1o.png in Resources */,
 				42C6905A2501E94E00BAD42B /* YJBridge.html in Resources */,
 				42ABDCFC24F8B7AD00E7ADF8 /* LaunchScreen.storyboard in Resources */,
+				4284251A250A2A0500BFB3CC /* logo.png in Resources */,
+				42842517250A2A0500BFB3CC /* hide@2x.png in Resources */,
 				42ABDCF924F8B7AD00E7ADF8 /* Assets.xcassets in Resources */,
 				42F3579825062FC3008CE547 /* WebViewJavascriptBridge.js in Resources */,
 				421183B52508B72300AB3A45 /* icon_kb_del@3x.png in Resources */,
+				42842516250A2A0500BFB3CC /* hide@3x.png in Resources */,
+				4284251B250A2A0500BFB3CC /* del@2x.png in Resources */,
+				42842519250A2A0500BFB3CC /* del.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +579,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				421183B22508B72300AB3A45 /* FYCursorNumberKeybordView.m in Sources */,
+				42842518250A2A0500BFB3CC /* SafeKBInputView.m in Sources */,
 				42AE3EFE24FE3D1E00675837 /* MobileSimModel.m in Sources */,
 				42AE3EF724FE3CA300675837 /* UIDevice+IdentifierAddition.m in Sources */,
 				42F357A725062FCF008CE547 /* ModuleContext.m in Sources */,
@@ -537,8 +593,10 @@
 				421183B42508B72300AB3A45 /* FYKeybordFactory.m in Sources */,
 				42FFAFE724FF2C4F00199C7E /* WMProgressView.m in Sources */,
 				42FFAFE224FF2C4F00199C7E /* WMPageController.m in Sources */,
+				4284251C250A2A0500BFB3CC /* SafeKeyboard.m in Sources */,
 				42AE3EF324FE3B7400675837 /* UserAgentUtil.m in Sources */,
 				42AE3EFF24FE3D1E00675837 /* MobileSimUtil.m in Sources */,
+				4284251D250A2A0500BFB3CC /* SafeTextField.m in Sources */,
 				42AE3F0224FE3D4200675837 /* NSString+MD5.m in Sources */,
 				421183B32508B72300AB3A45 /* FYIDPadView.m in Sources */,
 				425F31AC24FF9E240041858A /* YJJsonKit.m in Sources */,
