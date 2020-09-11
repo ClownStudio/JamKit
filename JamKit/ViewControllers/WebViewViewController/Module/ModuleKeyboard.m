@@ -6,28 +6,24 @@
 //  Copyright © 2020 张文洁. All rights reserved.
 //
 
-#import "ModuleNative.h"
+#import "ModuleKeyboard.h"
 #import <KKJSBridge.h>
 #import "ModuleContext.h"
 #import "SafeKBInputView.h"
 #import <Masonry.h>
 #import "WebViewViewController.h"
 
-typedef void (^KeyBoardResponseBlock)(NSDictionary *responseData);
-
-@interface ModuleNative()<KKJSBridgeModule,SafeKBInputViewDelegate>
+@interface ModuleKeyboard()<KKJSBridgeModule,SafeKBInputViewDelegate>
 
 @property (nonatomic, strong) ModuleContext *context;
 @property (nonatomic, strong) SafeKBInputView *input;
 
 @end
 
-@implementation ModuleNative{
-     KeyBoardResponseBlock _responseCallback;
-}
+@implementation ModuleKeyboard
 
 + (nonnull NSString *)moduleName {
-    return @"native";
+    return @"keyboard";
 }
 
 + (BOOL)isSingleton {
@@ -41,11 +37,6 @@ typedef void (^KeyBoardResponseBlock)(NSDictionary *responseData);
     }
 
     return self;
-}
-
-// 模块提供的方法
-- (void)showParamsContent:(KKJSBridgeEngine *)engine params:(NSDictionary *)params responseCallback:(void (^)(NSDictionary *responseData))responseCallback {
-    responseCallback ? responseCallback(@{@"title": [params objectForKey:@"b"] ? [params objectForKey:@"b"] : @""}) : nil;
 }
 
 - (void)showNativeKeyboard:(KKJSBridgeEngine *)engine params:(NSDictionary *)params responseCallback:(void (^)(NSDictionary *responseData))responseCallback {
@@ -62,14 +53,13 @@ typedef void (^KeyBoardResponseBlock)(NSDictionary *responseData);
     {
         self.input = [SafeKBInputView shareKBInputViewWithTypeAll];
     }
-    NSString *textId = [params objectForKey:@"textId"];
+    NSString *textId = [params objectForKey:@"textTag"];
     self.input.textId = textId;
     
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.input show];
     });
     self.input.InputViewDelegate = self;
-    _responseCallback = responseCallback;
 }
 
 -(void)safeKBInputViewDidChangeText:(SafeKBInputView *)inputView{

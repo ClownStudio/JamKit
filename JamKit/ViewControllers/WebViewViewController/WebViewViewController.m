@@ -13,7 +13,8 @@
 #import "UserAgentUtil.h"
 #import <KKJSBridge.h>
 #import "ModuleContext.h"
-#import "ModuleNative.h"
+#import "ModuleNormal.h"
+#import "ModuleKeyboard.h"
 #import <AFNetworking.h>
 
 @interface WebViewViewController () <WKUIDelegate,WKNavigationDelegate>
@@ -127,7 +128,8 @@ static NSString *_lastPage;//只记录无逻辑
     context.webview = self.webView;
     
     // 注册 默认模块
-    [self.jsBridgeEngine.moduleRegister registerModuleClass:ModuleNative.class withContext:context];
+    [self.jsBridgeEngine.moduleRegister registerModuleClass:ModuleNormal.class withContext:context];
+    [self.jsBridgeEngine.moduleRegister registerModuleClass:ModuleKeyboard.class withContext:context];
 }
 
 #pragma mark - KKJSBridgeAjaxDelegateManager
