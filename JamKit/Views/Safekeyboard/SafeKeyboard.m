@@ -2,15 +2,15 @@
 //  SafeKeyboard.m
 //  SafeKeyboard
 //
-//  Created by 谈Xx on 16/4/6.
-//  Copyright © 2016年 谈Xx. All rights reserved.
+//  Created by Jam Zhang on 16/4/6.
+//  Copyright © 2016年 Jam Zhang. All rights reserved.
 //
 
 #import "SafeKeyboard.h"
 
 #pragma mark ------------------------ define ------------------------
 
-#define TitleText @"网络安全输入"
+#define TitleText @"安全键盘 By Jam"
 #define LogoImgName @"logo"
 // 字体
 #define KBFont(s) [UIFont fontWithName:@"HelveticaNeue-Light" size:s]

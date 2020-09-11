@@ -7,14 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <KKWebView.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ModuleContext : NSObject
 
 @property (nonatomic, weak) UIViewController *viewController;
-@property (nonatomic, weak) UIScrollView *scrollView;
-@property (nonatomic, copy) NSString *name;
+@property (nonatomic, weak) KKWebView *webview;
 
 @end
 

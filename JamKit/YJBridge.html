@@ -29,8 +29,14 @@
     </head>
     <body>
         <script type="text/javascript">
+            function showAllKeyboard(func){
+                window.KKJSBridge.call("native", "showNativeKeyboard",{"type":"all","textId":"all"},func);
+            }
+            function showTextKeyboard(func){
+                window.KKJSBridge.call("native", "showNativeKeyboard",{"type":"abc","textId":"text"},func);
+            }
             function showNumberKeyboard(func){
-                window.KKJSBridge.call("native", "showNumberKeyboard",{},func);
+                window.KKJSBridge.call("native", "showNativeKeyboard",{"type":"num","textId":"num"},func);
             }
             function showParamsContent(){
                 window.KKJSBridge.call("native", "showParamsContent",{"a":"123","b":"456"}, function(res) {
@@ -47,11 +53,18 @@
                     <button onclick="showParamsContent()">显示传入的参数</button>
                 </div>
                 <div class="info-group">
-                    <input id="text" type="text" value="请输入密码" readonly="readonly" onclick="showNumberKeyboard(function(res) {
-                        var input = document.getElementById('x');
-                        input.value += res.value;
+                    <input id="all" type="text" value="" readonly onfocus="showAllKeyboard(function(res) {
+                        var input = document.getElementById('all');
+                        input.value = res.value;
                     })" style="-webkit-user-select:none">
-                    <input id="num" type="text" value="请输入数字" readonly onclick="OCModel.callKeyboardType('num','abc')" style="-webkit-user-select:none">
+                    <input id="text" type="text" value="" readonly="readonly" onfocus="showTextKeyboard(function(res) {
+                        var input = document.getElementById('text');
+                        input.value = res.value;
+                    })" style="-webkit-user-select:none">
+                    <input id="num" type="text" value="" readonly onfocus="showNumberKeyboard(function(res) {
+                        var input = document.getElementById('num');
+                        input.value = res.value;
+                    })" style="-webkit-user-select:none">
                 </div>
             </div>
         </div>

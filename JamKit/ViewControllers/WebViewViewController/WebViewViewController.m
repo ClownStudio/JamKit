@@ -124,8 +124,7 @@ static NSString *_lastPage;//只记录无逻辑
 - (void)registerModule{
     ModuleContext *context = [ModuleContext new];
     context.viewController = self;
-    context.scrollView = self.webView.scrollView;
-    context.name = @"上下文";
+    context.webview = self.webView;
     
     // 注册 默认模块
     [self.jsBridgeEngine.moduleRegister registerModuleClass:ModuleNative.class withContext:context];
