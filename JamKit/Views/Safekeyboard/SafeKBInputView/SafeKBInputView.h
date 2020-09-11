@@ -23,7 +23,7 @@
 @property (nonatomic, strong) SafeTextField *textField;
 @property (nonatomic, copy) NSMutableString *placeholderText;
 @property (nonatomic, copy) NSString *trueText;
-@property (nonatomic, strong) NSString *textId;
+@property (nonatomic, strong) NSString *textTag;
 @property (nonatomic, weak) id<SafeKBInputViewDelegate> InputViewDelegate;
 
 /**

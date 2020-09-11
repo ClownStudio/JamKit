@@ -53,8 +53,8 @@
     {
         self.input = [SafeKBInputView shareKBInputViewWithTypeAll];
     }
-    NSString *textId = [params objectForKey:@"textTag"];
-    self.input.textId = textId;
+    NSString *textTag = [params objectForKey:@"textTag"];
+    self.input.textTag = textTag;
     
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.input show];
@@ -63,8 +63,7 @@
 }
 
 -(void)safeKBInputViewDidChangeText:(SafeKBInputView *)inputView{
-    NSString *encodeStr = [inputView.trueText stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLPasswordAllowedCharacterSet]];
-    NSString *js = [NSString stringWithFormat:@"var field = document.getElementById('%@'); field.value= '%@'; ",inputView.textId,encodeStr];
+    NSString *js = [NSString stringWithFormat:@"var field = document.getElementById('%@'); field.value = '%@'; ",inputView.textTag,inputView.trueText];
     [_context.webview evaluateJavaScript:js completionHandler:nil];
 }
 

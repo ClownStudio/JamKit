@@ -9,4 +9,5 @@ target 'JamKit' do
     pod 'KKJSBridge', '~> 1.1.5'
     pod 'Masonry', '~> 1.1.0'
     pod 'YYKit', '~> 1.0.9'
+    pod 'MMNumberKeyboard', '~> 0.3.1'
 end

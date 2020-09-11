@@ -36,13 +36,13 @@
             }
         
             function showAllKeyboard(){
-                window.KKJSBridge.call("keyboard", "showNativeKeyboard",{"type":"all","textTag":"all"},null);
+                window.KKJSBridge.call("keyboard", "showNativeKeyboard",{"type":"all","textTag":"all","content":document.getElementById('all').value},null);
             }
             function showTextKeyboard(){
-                window.KKJSBridge.call("keyboard", "showNativeKeyboard",{"type":"abc","textTag":"text"},null);
+                window.KKJSBridge.call("keyboard", "showNativeKeyboard",{"type":"abc","textTag":"text","content":document.getElementById('all').value},null);
             }
             function showNumberKeyboard(){
-                window.KKJSBridge.call("keyboard", "showNativeKeyboard",{"type":"num","textTag":"num"},null);
+                window.KKJSBridge.call("keyboard", "showNativeKeyboard",{"type":"num","textTag":"num","content":document.getElementById('all').value},null);
             }
             
         </script>

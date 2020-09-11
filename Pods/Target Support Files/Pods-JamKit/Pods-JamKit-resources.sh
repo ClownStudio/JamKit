@@ -98,9 +98,21 @@ EOM
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_ROOT}/KKJSBridge/KKJSBridge/KKJSBridge/JS/KKJSBridge.js"
+  install_resource "${PODS_ROOT}/MMNumberKeyboard/Images/MMNumberKeyboardDeleteKey.png"
+  install_resource "${PODS_ROOT}/MMNumberKeyboard/Images/MMNumberKeyboardDeleteKey@2x.png"
+  install_resource "${PODS_ROOT}/MMNumberKeyboard/Images/MMNumberKeyboardDeleteKey@3x.png"
+  install_resource "${PODS_ROOT}/MMNumberKeyboard/Images/MMNumberKeyboardDismissKey.png"
+  install_resource "${PODS_ROOT}/MMNumberKeyboard/Images/MMNumberKeyboardDismissKey@2x.png"
+  install_resource "${PODS_ROOT}/MMNumberKeyboard/Images/MMNumberKeyboardDismissKey@3x.png"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "${PODS_ROOT}/KKJSBridge/KKJSBridge/KKJSBridge/JS/KKJSBridge.js"
+  install_resource "${PODS_ROOT}/MMNumberKeyboard/Images/MMNumberKeyboardDeleteKey.png"
+  install_resource "${PODS_ROOT}/MMNumberKeyboard/Images/MMNumberKeyboardDeleteKey@2x.png"
+  install_resource "${PODS_ROOT}/MMNumberKeyboard/Images/MMNumberKeyboardDeleteKey@3x.png"
+  install_resource "${PODS_ROOT}/MMNumberKeyboard/Images/MMNumberKeyboardDismissKey.png"
+  install_resource "${PODS_ROOT}/MMNumberKeyboard/Images/MMNumberKeyboardDismissKey@2x.png"
+  install_resource "${PODS_ROOT}/MMNumberKeyboard/Images/MMNumberKeyboardDismissKey@3x.png"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

@@ -39,6 +39,7 @@
 		42F357A725062FCF008CE547 /* ModuleContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3579F25062FCF008CE547 /* ModuleContext.m */; };
 		42F357AB25077F27008CE547 /* ModuleNormal.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F357AA25077F27008CE547 /* ModuleNormal.m */; };
 		42FE6EB4250B63FB00FDDD59 /* ModuleKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FE6EB3250B63FB00FDDD59 /* ModuleKeyboard.m */; };
+		42FE6EB8250B73BE00FDDD59 /* YJInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FE6EB7250B73BE00FDDD59 /* YJInputView.m */; };
 		42FFAFE224FF2C4F00199C7E /* WMPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FFAFD524FF2C4F00199C7E /* WMPageController.m */; };
 		42FFAFE324FF2C4F00199C7E /* UIViewController+WMPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FFAFD624FF2C4F00199C7E /* UIViewController+WMPageController.m */; };
 		42FFAFE424FF2C4F00199C7E /* WMMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FFAFDC24FF2C4F00199C7E /* WMMenuItem.m */; };
@@ -108,6 +109,8 @@
 		42F357AA25077F27008CE547 /* ModuleNormal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModuleNormal.m; sourceTree = "<group>"; };
 		42FE6EB2250B63FB00FDDD59 /* ModuleKeyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleKeyboard.h; sourceTree = "<group>"; };
 		42FE6EB3250B63FB00FDDD59 /* ModuleKeyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModuleKeyboard.m; sourceTree = "<group>"; };
+		42FE6EB6250B73BE00FDDD59 /* YJInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJInputView.h; sourceTree = "<group>"; };
+		42FE6EB7250B73BE00FDDD59 /* YJInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJInputView.m; sourceTree = "<group>"; };
 		42FFAFD524FF2C4F00199C7E /* WMPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMPageController.m; sourceTree = "<group>"; };
 		42FFAFD624FF2C4F00199C7E /* UIViewController+WMPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+WMPageController.m"; sourceTree = "<group>"; };
 		42FFAFD824FF2C4F00199C7E /* WMScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMScrollView.h; sourceTree = "<group>"; };
@@ -327,6 +330,7 @@
 		42C6907D25022D3300BAD42B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				42FE6EB5250B739B00FDDD59 /* YJNumberKeyboard */,
 				42842508250A2A0500BFB3CC /* Safekeyboard */,
 				42F3579225061898008CE547 /* BackNavigationBar */,
 			);
@@ -361,6 +365,15 @@
 				42FE6EB3250B63FB00FDDD59 /* ModuleKeyboard.m */,
 			);
 			path = Module;
+			sourceTree = "<group>";
+		};
+		42FE6EB5250B739B00FDDD59 /* YJNumberKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				42FE6EB6250B73BE00FDDD59 /* YJInputView.h */,
+				42FE6EB7250B73BE00FDDD59 /* YJInputView.m */,
+			);
+			path = YJNumberKeyboard;
 			sourceTree = "<group>";
 		};
 		42FFAFD424FF2C4F00199C7E /* WMPageController */ = {
@@ -533,6 +546,7 @@
 				42AE3EF724FE3CA300675837 /* UIDevice+IdentifierAddition.m in Sources */,
 				42F357A725062FCF008CE547 /* ModuleContext.m in Sources */,
 				425F31AB24FF9E240041858A /* YJHttpRequest.m in Sources */,
+				42FE6EB8250B73BE00FDDD59 /* YJInputView.m in Sources */,
 				42ABDCEE24F8B7AA00E7ADF8 /* AppDelegate.m in Sources */,
 				42C690642502283500BAD42B /* NSMutableArray+QueueAdditions.m in Sources */,
 				42F357AB25077F27008CE547 /* ModuleNormal.m in Sources */,

@@ -17,6 +17,7 @@ PODS:
   - IQKeyboardManager (6.5.6)
   - KKJSBridge (1.1.5)
   - Masonry (1.1.0)
+  - MMNumberKeyboard (0.3.1)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
@@ -26,6 +27,7 @@ DEPENDENCIES:
   - IQKeyboardManager (~> 6.5.6)
   - KKJSBridge (~> 1.1.5)
   - Masonry (~> 1.1.0)
+  - MMNumberKeyboard (~> 0.3.1)
   - YYKit (~> 1.0.9)
 
 SPEC REPOS:
@@ -34,6 +36,7 @@ SPEC REPOS:
     - IQKeyboardManager
     - KKJSBridge
     - Masonry
+    - MMNumberKeyboard
     - YYKit
 
 SPEC CHECKSUMS:
@@ -41,8 +44,9 @@ SPEC CHECKSUMS:
   IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
   KKJSBridge: fc41c801de7cdf6379aee4033c0d851dd50a930b
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MMNumberKeyboard: 17b8336af7270ea668e9b3b594cab80c5c69546e
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 040c97234c6097f9270305964bfe44b0edf8fda1
+PODFILE CHECKSUM: dd3d0bb7e3e141e0156bec7d607d387bbb08f7fb
 
 COCOAPODS: 1.9.3
