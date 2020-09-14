@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4226D1E6250F1C4B006BC7A1 /* KRHintBubble.m in Sources */ = {isa = PBXBuildFile; fileRef = 4226D1B1250F1C4B006BC7A1 /* KRHintBubble.m */; };
+		4226D1E7250F1C4B006BC7A1 /* KRPasswordKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 4226D1B2250F1C4B006BC7A1 /* KRPasswordKeyboard.m */; };
+		4226D1E8250F1C4B006BC7A1 /* KRLetterKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 4226D1B5250F1C4B006BC7A1 /* KRLetterKeyboard.m */; };
+		4226D1F8250F1C4B006BC7A1 /* KRBaseKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 4226D1D9250F1C4B006BC7A1 /* KRBaseKeyboard.m */; };
+		4226D1F9250F1C4B006BC7A1 /* KRNumberKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 4226D1DA250F1C4B006BC7A1 /* KRNumberKeyboard.m */; };
+		4226D1FA250F1C4B006BC7A1 /* keyboard-click.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 4226D1DD250F1C4B006BC7A1 /* keyboard-click.aiff */; };
+		4226D1FB250F1C4B006BC7A1 /* keyboard-click2.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 4226D1DE250F1C4B006BC7A1 /* keyboard-click2.aiff */; };
+		4226D1FC250F1C4B006BC7A1 /* KRSymbolKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 4226D1E2250F1C4B006BC7A1 /* KRSymbolKeyboard.m */; };
+		4226D1FD250F1C4B006BC7A1 /* KRAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4226D1E3250F1C4B006BC7A1 /* KRAssets.xcassets */; };
+		4226D1FE250F1C4B006BC7A1 /* KRKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 4226D1E5250F1C4B006BC7A1 /* KRKeyboard.m */; };
+		4226D201250F29DF006BC7A1 /* NSArray+Sudoku.m in Sources */ = {isa = PBXBuildFile; fileRef = 4226D200250F29DF006BC7A1 /* NSArray+Sudoku.m */; };
 		425F31AB24FF9E240041858A /* YJHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 425F31A724FF9E240041858A /* YJHttpRequest.m */; };
 		425F31AC24FF9E240041858A /* YJJsonKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 425F31A924FF9E240041858A /* YJJsonKit.m */; };
 		42842516250A2A0500BFB3CC /* hide@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4284250B250A2A0500BFB3CC /* hide@3x.png */; };
@@ -51,6 +62,26 @@
 
 /* Begin PBXFileReference section */
 		1D8C4175C81B10EDFEF713CF /* libPods-JamKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JamKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4226D1B0250F1C4B006BC7A1 /* Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
+		4226D1B1250F1C4B006BC7A1 /* KRHintBubble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRHintBubble.m; sourceTree = "<group>"; };
+		4226D1B2250F1C4B006BC7A1 /* KRPasswordKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRPasswordKeyboard.m; sourceTree = "<group>"; };
+		4226D1B3250F1C4B006BC7A1 /* KRNumberKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRNumberKeyboard.h; sourceTree = "<group>"; };
+		4226D1B4250F1C4B006BC7A1 /* KRSymbolKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRSymbolKeyboard.h; sourceTree = "<group>"; };
+		4226D1B5250F1C4B006BC7A1 /* KRLetterKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRLetterKeyboard.m; sourceTree = "<group>"; };
+		4226D1D9250F1C4B006BC7A1 /* KRBaseKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRBaseKeyboard.m; sourceTree = "<group>"; };
+		4226D1DA250F1C4B006BC7A1 /* KRNumberKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRNumberKeyboard.m; sourceTree = "<group>"; };
+		4226D1DB250F1C4B006BC7A1 /* KRPasswordKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRPasswordKeyboard.h; sourceTree = "<group>"; };
+		4226D1DD250F1C4B006BC7A1 /* keyboard-click.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = "keyboard-click.aiff"; sourceTree = "<group>"; };
+		4226D1DE250F1C4B006BC7A1 /* keyboard-click2.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = "keyboard-click2.aiff"; sourceTree = "<group>"; };
+		4226D1DF250F1C4B006BC7A1 /* KRHintBubble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRHintBubble.h; sourceTree = "<group>"; };
+		4226D1E0250F1C4B006BC7A1 /* KRBaseKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRBaseKeyboard.h; sourceTree = "<group>"; };
+		4226D1E1250F1C4B006BC7A1 /* KRLetterKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRLetterKeyboard.h; sourceTree = "<group>"; };
+		4226D1E2250F1C4B006BC7A1 /* KRSymbolKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRSymbolKeyboard.m; sourceTree = "<group>"; };
+		4226D1E3250F1C4B006BC7A1 /* KRAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = KRAssets.xcassets; sourceTree = "<group>"; };
+		4226D1E4250F1C4B006BC7A1 /* KRKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRKeyboard.h; sourceTree = "<group>"; };
+		4226D1E5250F1C4B006BC7A1 /* KRKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRKeyboard.m; sourceTree = "<group>"; };
+		4226D1FF250F29DF006BC7A1 /* NSArray+Sudoku.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Sudoku.h"; sourceTree = "<group>"; };
+		4226D200250F29DF006BC7A1 /* NSArray+Sudoku.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Sudoku.m"; sourceTree = "<group>"; };
 		425F31A624FF9E240041858A /* YJHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJHttpRequest.h; sourceTree = "<group>"; };
 		425F31A724FF9E240041858A /* YJHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJHttpRequest.m; sourceTree = "<group>"; };
 		425F31A924FF9E240041858A /* YJJsonKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJJsonKit.m; sourceTree = "<group>"; };
@@ -139,6 +170,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4226D1AE250F1C4B006BC7A1 /* KRKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				4226D1AF250F1C4B006BC7A1 /* KRKeyboard */,
+				4226D1E3250F1C4B006BC7A1 /* KRAssets.xcassets */,
+				4226D1E4250F1C4B006BC7A1 /* KRKeyboard.h */,
+				4226D1E5250F1C4B006BC7A1 /* KRKeyboard.m */,
+			);
+			path = KRKeyboard;
+			sourceTree = "<group>";
+		};
+		4226D1AF250F1C4B006BC7A1 /* KRKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				4226D1B0250F1C4B006BC7A1 /* Define.h */,
+				4226D1E0250F1C4B006BC7A1 /* KRBaseKeyboard.h */,
+				4226D1D9250F1C4B006BC7A1 /* KRBaseKeyboard.m */,
+				4226D1DF250F1C4B006BC7A1 /* KRHintBubble.h */,
+				4226D1B1250F1C4B006BC7A1 /* KRHintBubble.m */,
+				4226D1E1250F1C4B006BC7A1 /* KRLetterKeyboard.h */,
+				4226D1B5250F1C4B006BC7A1 /* KRLetterKeyboard.m */,
+				4226D1B3250F1C4B006BC7A1 /* KRNumberKeyboard.h */,
+				4226D1DA250F1C4B006BC7A1 /* KRNumberKeyboard.m */,
+				4226D1DB250F1C4B006BC7A1 /* KRPasswordKeyboard.h */,
+				4226D1B2250F1C4B006BC7A1 /* KRPasswordKeyboard.m */,
+				4226D1B4250F1C4B006BC7A1 /* KRSymbolKeyboard.h */,
+				4226D1E2250F1C4B006BC7A1 /* KRSymbolKeyboard.m */,
+				4226D1FF250F29DF006BC7A1 /* NSArray+Sudoku.h */,
+				4226D200250F29DF006BC7A1 /* NSArray+Sudoku.m */,
+				4226D1DC250F1C4B006BC7A1 /* Resource */,
+			);
+			path = KRKeyboard;
+			sourceTree = "<group>";
+		};
+		4226D1DC250F1C4B006BC7A1 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				4226D1DD250F1C4B006BC7A1 /* keyboard-click.aiff */,
+				4226D1DE250F1C4B006BC7A1 /* keyboard-click2.aiff */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		425F31A524FF9E240041858A /* YJHttpRequest */ = {
 			isa = PBXGroup;
 			children = (
@@ -330,6 +404,7 @@
 		42C6907D25022D3300BAD42B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4226D1AE250F1C4B006BC7A1 /* KRKeyboard */,
 				42FE6EB5250B739B00FDDD59 /* YJNumberKeyboard */,
 				42842508250A2A0500BFB3CC /* Safekeyboard */,
 				42F3579225061898008CE547 /* BackNavigationBar */,
@@ -482,13 +557,16 @@
 				4284251E250A2A0500BFB3CC /* log1o.png in Resources */,
 				42C6905A2501E94E00BAD42B /* YJBridge.html in Resources */,
 				42ABDCFC24F8B7AD00E7ADF8 /* LaunchScreen.storyboard in Resources */,
+				4226D1FA250F1C4B006BC7A1 /* keyboard-click.aiff in Resources */,
 				4284251A250A2A0500BFB3CC /* logo.png in Resources */,
 				42842517250A2A0500BFB3CC /* hide@2x.png in Resources */,
 				42ABDCF924F8B7AD00E7ADF8 /* Assets.xcassets in Resources */,
+				4226D1FB250F1C4B006BC7A1 /* keyboard-click2.aiff in Resources */,
 				42F3579825062FC3008CE547 /* WebViewJavascriptBridge.js in Resources */,
 				42842516250A2A0500BFB3CC /* hide@3x.png in Resources */,
 				4284251B250A2A0500BFB3CC /* del@2x.png in Resources */,
 				42842519250A2A0500BFB3CC /* del.png in Resources */,
+				4226D1FD250F1C4B006BC7A1 /* KRAssets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,11 +626,17 @@
 				425F31AB24FF9E240041858A /* YJHttpRequest.m in Sources */,
 				42FE6EB8250B73BE00FDDD59 /* YJInputView.m in Sources */,
 				42ABDCEE24F8B7AA00E7ADF8 /* AppDelegate.m in Sources */,
+				4226D1E7250F1C4B006BC7A1 /* KRPasswordKeyboard.m in Sources */,
 				42C690642502283500BAD42B /* NSMutableArray+QueueAdditions.m in Sources */,
 				42F357AB25077F27008CE547 /* ModuleNormal.m in Sources */,
 				42ABDD2824FC9A7900E7ADF8 /* MainViewController.m in Sources */,
+				4226D1F9250F1C4B006BC7A1 /* KRNumberKeyboard.m in Sources */,
+				4226D1E8250F1C4B006BC7A1 /* KRLetterKeyboard.m in Sources */,
+				4226D201250F29DF006BC7A1 /* NSArray+Sudoku.m in Sources */,
+				4226D1FE250F1C4B006BC7A1 /* KRKeyboard.m in Sources */,
 				42F3579525061898008CE547 /* BackNavigationBar.m in Sources */,
 				42FFAFE424FF2C4F00199C7E /* WMMenuItem.m in Sources */,
+				4226D1FC250F1C4B006BC7A1 /* KRSymbolKeyboard.m in Sources */,
 				42FFAFE724FF2C4F00199C7E /* WMProgressView.m in Sources */,
 				42FFAFE224FF2C4F00199C7E /* WMPageController.m in Sources */,
 				4284251C250A2A0500BFB3CC /* SafeKeyboard.m in Sources */,
@@ -568,8 +652,10 @@
 				42AE3EEC24FE2B7000675837 /* WebViewViewController.m in Sources */,
 				42FFAFE624FF2C4F00199C7E /* WMMenuView.m in Sources */,
 				42ABDD0C24F8B8D300E7ADF8 /* RootViewController.m in Sources */,
+				4226D1F8250F1C4B006BC7A1 /* KRBaseKeyboard.m in Sources */,
 				42ABDCFF24F8B7AD00E7ADF8 /* main.m in Sources */,
 				42ABDD3724FCD55000E7ADF8 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
+				4226D1E6250F1C4B006BC7A1 /* KRHintBubble.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

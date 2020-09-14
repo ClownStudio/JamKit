@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <MMNumberKeyboard.h>
 
 @class YJInputView;
 
@@ -20,11 +19,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface YJInputView : UIView
+@interface YJInputView : UIView <UITextFieldDelegate>
 
 @property (nonatomic, strong) UITextField *textField;
 @property (nonatomic, copy) NSMutableString *placeholderText;
-@property (nonatomic, copy) NSString *trueText;
 @property (nonatomic, strong) NSString *textTag;
 @property (nonatomic, weak) id<YJInputViewDelegate> InputViewDelegate;
 
@@ -39,11 +37,11 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *  数字+小数点
  */
-+(YJInputView *)shareKBInputViewWithTypeNumDecimal;
++(YJInputView *)shareKBInputViewWithTypePassword;
 /**
  *  字母+符号
  */
-+(YJInputView *)shareKBInputViewWithTypeABC;
++(YJInputView *)shareKBInputViewWithTypeLetter;
 
 // 显示
 -(void)show;

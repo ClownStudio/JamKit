@@ -10,7 +10,6 @@
 #import <KKJSBridge.h>
 #import "ModuleContext.h"
 #import "SafeKBInputView.h"
-#import <Masonry.h>
 #import "WebViewViewController.h"
 
 @interface ModuleKeyboard()<KKJSBridgeModule,SafeKBInputViewDelegate>
