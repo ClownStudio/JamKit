@@ -39,10 +39,10 @@
                 window.KKJSBridge.call("keyboard", "showNativeKeyboard",{"type":"all","textTag":"all","content":document.getElementById('all').value},null);
             }
             function showTextKeyboard(){
-                window.KKJSBridge.call("keyboard", "showNativeKeyboard",{"type":"abc","textTag":"text","content":document.getElementById('all').value},null);
+                window.KKJSBridge.call("keyboard", "showNativeKeyboard",{"type":"letter","textTag":"text","content":document.getElementById('text').value},null);
             }
             function showNumberKeyboard(){
-                window.KKJSBridge.call("keyboard", "showNativeKeyboard",{"type":"num","textTag":"num","content":document.getElementById('all').value},null);
+                window.KKJSBridge.call("keyboard", "showNativeKeyboard",{"type":"number","textTag":"num","content":document.getElementById('num').value},null);
             }
             
         </script>

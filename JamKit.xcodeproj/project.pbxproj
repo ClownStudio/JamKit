@@ -18,17 +18,9 @@
 		4226D1FD250F1C4B006BC7A1 /* KRAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4226D1E3250F1C4B006BC7A1 /* KRAssets.xcassets */; };
 		4226D1FE250F1C4B006BC7A1 /* KRKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 4226D1E5250F1C4B006BC7A1 /* KRKeyboard.m */; };
 		4226D201250F29DF006BC7A1 /* NSArray+Sudoku.m in Sources */ = {isa = PBXBuildFile; fileRef = 4226D200250F29DF006BC7A1 /* NSArray+Sudoku.m */; };
+		4226D208250F6CA8006BC7A1 /* NoInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4226D207250F6CA8006BC7A1 /* NoInputAccessoryView.m */; };
 		425F31AB24FF9E240041858A /* YJHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 425F31A724FF9E240041858A /* YJHttpRequest.m */; };
 		425F31AC24FF9E240041858A /* YJJsonKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 425F31A924FF9E240041858A /* YJJsonKit.m */; };
-		42842516250A2A0500BFB3CC /* hide@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4284250B250A2A0500BFB3CC /* hide@3x.png */; };
-		42842517250A2A0500BFB3CC /* hide@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4284250C250A2A0500BFB3CC /* hide@2x.png */; };
-		42842518250A2A0500BFB3CC /* SafeKBInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4284250F250A2A0500BFB3CC /* SafeKBInputView.m */; };
-		42842519250A2A0500BFB3CC /* del.png in Resources */ = {isa = PBXBuildFile; fileRef = 42842510250A2A0500BFB3CC /* del.png */; };
-		4284251A250A2A0500BFB3CC /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 42842511250A2A0500BFB3CC /* logo.png */; };
-		4284251B250A2A0500BFB3CC /* del@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42842512250A2A0500BFB3CC /* del@2x.png */; };
-		4284251C250A2A0500BFB3CC /* SafeKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 42842513250A2A0500BFB3CC /* SafeKeyboard.m */; };
-		4284251D250A2A0500BFB3CC /* SafeTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 42842514250A2A0500BFB3CC /* SafeTextField.m */; };
-		4284251E250A2A0500BFB3CC /* log1o.png in Resources */ = {isa = PBXBuildFile; fileRef = 42842515250A2A0500BFB3CC /* log1o.png */; };
 		42ABDCEE24F8B7AA00E7ADF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42ABDCED24F8B7AA00E7ADF8 /* AppDelegate.m */; };
 		42ABDCF924F8B7AD00E7ADF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42ABDCF824F8B7AD00E7ADF8 /* Assets.xcassets */; };
 		42ABDCFC24F8B7AD00E7ADF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42ABDCFA24F8B7AD00E7ADF8 /* LaunchScreen.storyboard */; };
@@ -82,22 +74,12 @@
 		4226D1E5250F1C4B006BC7A1 /* KRKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRKeyboard.m; sourceTree = "<group>"; };
 		4226D1FF250F29DF006BC7A1 /* NSArray+Sudoku.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Sudoku.h"; sourceTree = "<group>"; };
 		4226D200250F29DF006BC7A1 /* NSArray+Sudoku.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Sudoku.m"; sourceTree = "<group>"; };
+		4226D206250F6CA8006BC7A1 /* NoInputAccessoryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoInputAccessoryView.h; sourceTree = "<group>"; };
+		4226D207250F6CA8006BC7A1 /* NoInputAccessoryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoInputAccessoryView.m; sourceTree = "<group>"; };
 		425F31A624FF9E240041858A /* YJHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJHttpRequest.h; sourceTree = "<group>"; };
 		425F31A724FF9E240041858A /* YJHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJHttpRequest.m; sourceTree = "<group>"; };
 		425F31A924FF9E240041858A /* YJJsonKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJJsonKit.m; sourceTree = "<group>"; };
 		425F31AA24FF9E240041858A /* YJJsonKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJJsonKit.h; sourceTree = "<group>"; };
-		42842509250A2A0500BFB3CC /* SafeKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeKeyboard.h; sourceTree = "<group>"; };
-		4284250A250A2A0500BFB3CC /* SafeTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeTextField.h; sourceTree = "<group>"; };
-		4284250B250A2A0500BFB3CC /* hide@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hide@3x.png"; sourceTree = "<group>"; };
-		4284250C250A2A0500BFB3CC /* hide@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hide@2x.png"; sourceTree = "<group>"; };
-		4284250E250A2A0500BFB3CC /* SafeKBInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeKBInputView.h; sourceTree = "<group>"; };
-		4284250F250A2A0500BFB3CC /* SafeKBInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeKBInputView.m; sourceTree = "<group>"; };
-		42842510250A2A0500BFB3CC /* del.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = del.png; sourceTree = "<group>"; };
-		42842511250A2A0500BFB3CC /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
-		42842512250A2A0500BFB3CC /* del@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "del@2x.png"; sourceTree = "<group>"; };
-		42842513250A2A0500BFB3CC /* SafeKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeKeyboard.m; sourceTree = "<group>"; };
-		42842514250A2A0500BFB3CC /* SafeTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeTextField.m; sourceTree = "<group>"; };
-		42842515250A2A0500BFB3CC /* log1o.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = log1o.png; sourceTree = "<group>"; };
 		42ABDCE924F8B7AA00E7ADF8 /* JamKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JamKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42ABDCEC24F8B7AA00E7ADF8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		42ABDCED24F8B7AA00E7ADF8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -213,6 +195,15 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		4226D205250F6C93006BC7A1 /* NoInputAccessoryView */ = {
+			isa = PBXGroup;
+			children = (
+				4226D206250F6CA8006BC7A1 /* NoInputAccessoryView.h */,
+				4226D207250F6CA8006BC7A1 /* NoInputAccessoryView.m */,
+			);
+			path = NoInputAccessoryView;
+			sourceTree = "<group>";
+		};
 		425F31A524FF9E240041858A /* YJHttpRequest */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,33 +220,6 @@
 				425F31AA24FF9E240041858A /* YJJsonKit.h */,
 			);
 			path = YJJsonKit;
-			sourceTree = "<group>";
-		};
-		42842508250A2A0500BFB3CC /* Safekeyboard */ = {
-			isa = PBXGroup;
-			children = (
-				42842510250A2A0500BFB3CC /* del.png */,
-				42842512250A2A0500BFB3CC /* del@2x.png */,
-				4284250C250A2A0500BFB3CC /* hide@2x.png */,
-				4284250B250A2A0500BFB3CC /* hide@3x.png */,
-				42842515250A2A0500BFB3CC /* log1o.png */,
-				42842511250A2A0500BFB3CC /* logo.png */,
-				4284250D250A2A0500BFB3CC /* SafeKBInputView */,
-				42842509250A2A0500BFB3CC /* SafeKeyboard.h */,
-				42842513250A2A0500BFB3CC /* SafeKeyboard.m */,
-				4284250A250A2A0500BFB3CC /* SafeTextField.h */,
-				42842514250A2A0500BFB3CC /* SafeTextField.m */,
-			);
-			path = Safekeyboard;
-			sourceTree = "<group>";
-		};
-		4284250D250A2A0500BFB3CC /* SafeKBInputView */ = {
-			isa = PBXGroup;
-			children = (
-				4284250E250A2A0500BFB3CC /* SafeKBInputView.h */,
-				4284250F250A2A0500BFB3CC /* SafeKBInputView.m */,
-			);
-			path = SafeKBInputView;
 			sourceTree = "<group>";
 		};
 		42ABDCE024F8B7AA00E7ADF8 = {
@@ -335,6 +299,7 @@
 		42AE3EEF24FE3B6A00675837 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				4226D205250F6C93006BC7A1 /* NoInputAccessoryView */,
 				425F31A524FF9E240041858A /* YJHttpRequest */,
 				425F31A824FF9E240041858A /* YJJsonKit */,
 				42AE3EF924FE3D1E00675837 /* MobileSimUtil */,
@@ -406,7 +371,6 @@
 			children = (
 				4226D1AE250F1C4B006BC7A1 /* KRKeyboard */,
 				42FE6EB5250B739B00FDDD59 /* YJNumberKeyboard */,
-				42842508250A2A0500BFB3CC /* Safekeyboard */,
 				42F3579225061898008CE547 /* BackNavigationBar */,
 			);
 			path = Views;
@@ -554,18 +518,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4284251E250A2A0500BFB3CC /* log1o.png in Resources */,
 				42C6905A2501E94E00BAD42B /* YJBridge.html in Resources */,
 				42ABDCFC24F8B7AD00E7ADF8 /* LaunchScreen.storyboard in Resources */,
 				4226D1FA250F1C4B006BC7A1 /* keyboard-click.aiff in Resources */,
-				4284251A250A2A0500BFB3CC /* logo.png in Resources */,
-				42842517250A2A0500BFB3CC /* hide@2x.png in Resources */,
 				42ABDCF924F8B7AD00E7ADF8 /* Assets.xcassets in Resources */,
 				4226D1FB250F1C4B006BC7A1 /* keyboard-click2.aiff in Resources */,
 				42F3579825062FC3008CE547 /* WebViewJavascriptBridge.js in Resources */,
-				42842516250A2A0500BFB3CC /* hide@3x.png in Resources */,
-				4284251B250A2A0500BFB3CC /* del@2x.png in Resources */,
-				42842519250A2A0500BFB3CC /* del.png in Resources */,
 				4226D1FD250F1C4B006BC7A1 /* KRAssets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -619,7 +577,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42842518250A2A0500BFB3CC /* SafeKBInputView.m in Sources */,
 				42AE3EFE24FE3D1E00675837 /* MobileSimModel.m in Sources */,
 				42AE3EF724FE3CA300675837 /* UIDevice+IdentifierAddition.m in Sources */,
 				42F357A725062FCF008CE547 /* ModuleContext.m in Sources */,
@@ -639,16 +596,15 @@
 				4226D1FC250F1C4B006BC7A1 /* KRSymbolKeyboard.m in Sources */,
 				42FFAFE724FF2C4F00199C7E /* WMProgressView.m in Sources */,
 				42FFAFE224FF2C4F00199C7E /* WMPageController.m in Sources */,
-				4284251C250A2A0500BFB3CC /* SafeKeyboard.m in Sources */,
 				42AE3EF324FE3B7400675837 /* UserAgentUtil.m in Sources */,
 				42AE3EFF24FE3D1E00675837 /* MobileSimUtil.m in Sources */,
-				4284251D250A2A0500BFB3CC /* SafeTextField.m in Sources */,
 				42AE3F0224FE3D4200675837 /* NSString+MD5.m in Sources */,
 				42FE6EB4250B63FB00FDDD59 /* ModuleKeyboard.m in Sources */,
 				425F31AC24FF9E240041858A /* YJJsonKit.m in Sources */,
 				42FFAFE524FF2C4F00199C7E /* WMScrollView.m in Sources */,
 				42ABDD4624FCFA4F00E7ADF8 /* BaseViewController.m in Sources */,
 				42FFAFE324FF2C4F00199C7E /* UIViewController+WMPageController.m in Sources */,
+				4226D208250F6CA8006BC7A1 /* NoInputAccessoryView.m in Sources */,
 				42AE3EEC24FE2B7000675837 /* WebViewViewController.m in Sources */,
 				42FFAFE624FF2C4F00199C7E /* WMMenuView.m in Sources */,
 				42ABDD0C24F8B8D300E7ADF8 /* RootViewController.m in Sources */,

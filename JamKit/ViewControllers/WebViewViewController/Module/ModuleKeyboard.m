@@ -9,13 +9,14 @@
 #import "ModuleKeyboard.h"
 #import <KKJSBridge.h>
 #import "ModuleContext.h"
-#import "SafeKBInputView.h"
 #import "WebViewViewController.h"
+#import "YJInputView.h"
+#import "NoInputAccessoryView.h"
 
-@interface ModuleKeyboard()<KKJSBridgeModule,SafeKBInputViewDelegate>
+@interface ModuleKeyboard()<KKJSBridgeModule,YJInputViewDelegate>
 
 @property (nonatomic, strong) ModuleContext *context;
-@property (nonatomic, strong) SafeKBInputView *input;
+@property (nonatomic, strong) YJInputView *input;
 
 @end
 
@@ -34,23 +35,27 @@
     if (self = [super init]) {
         _context = context;
     }
-
+    
     return self;
 }
 
 - (void)showNativeKeyboard:(KKJSBridgeEngine *)engine params:(NSDictionary *)params responseCallback:(void (^)(NSDictionary *responseData))responseCallback {
     NSString *type = [params objectForKey:@"type"];
-    if ([type isEqualToString:@"abc"])
+    if ([type isEqualToString:@"letter"])
     {
-        self.input = [SafeKBInputView shareKBInputViewWithTypeABC];
+        self.input = [YJInputView shareInputViewWithTypeLetter];
     }
-    else if ([type isEqualToString:@"num"])
+    else if ([type isEqualToString:@"number"])
     {
-        self.input = [SafeKBInputView shareKBInputViewWithTypeNum];
+        self.input = [YJInputView shareInputViewWithTypeNum];
+    }
+    else if ([type isEqualToString:@"password"])
+    {
+        self.input = [YJInputView shareInputViewWithTypeNum];
     }
     else if ([type isEqualToString:@"all"])
     {
-        self.input = [SafeKBInputView shareKBInputViewWithTypeAll];
+        self.input = [YJInputView shareInputViewWithTypeAll];
     }
     NSString *textTag = [params objectForKey:@"textTag"];
     self.input.textTag = textTag;
@@ -58,11 +63,11 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.input show];
     });
-    self.input.InputViewDelegate = self;
+    self.input.inputViewDelegate = self;
 }
 
--(void)safeKBInputViewDidChangeText:(SafeKBInputView *)inputView{
-    NSString *js = [NSString stringWithFormat:@"var field = document.getElementById('%@'); field.value = '%@'; ",inputView.textTag,inputView.trueText];
+- (void)editTextWithTag:(NSString *)textTag content:(NSString *)content{
+    NSString *js = [NSString stringWithFormat:@"var field = document.getElementById('%@'); field.value = '%@'; ",textTag,content];
     [_context.webview evaluateJavaScript:js completionHandler:nil];
 }
 

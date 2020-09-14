@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KRKeyboard.h"
 
 @class YJInputView;
 
@@ -15,36 +16,35 @@ NS_ASSUME_NONNULL_BEGIN
 // 点击的代理事件 传递到外层
 @protocol YJInputViewDelegate <NSObject>
 // 每次输入的代理事件
--(void)inputViewDidChangeText:(YJInputView *)inputView;
+- (void)editTextWithTag:(NSString *)textTag content:(NSString *)content;
 
 @end
 
-@interface YJInputView : UIView <UITextFieldDelegate>
+@interface YJInputView : UIView <UITextFieldDelegate,KRKeyboardDelegate>
 
 @property (nonatomic, strong) UITextField *textField;
 @property (nonatomic, copy) NSMutableString *placeholderText;
 @property (nonatomic, strong) NSString *textTag;
-@property (nonatomic, weak) id<YJInputViewDelegate> InputViewDelegate;
+@property (nonatomic, weak) id<YJInputViewDelegate> inputViewDelegate;
 
 /**
  *  带字母 字符 数字切换工具条
  */
-+(YJInputView *)shareKBInputViewWithTypeAll;
++(YJInputView *)shareInputViewWithTypeAll;
 /**
  *  数字
  */
-+(YJInputView *)shareKBInputViewWithTypeNum;
++(YJInputView *)shareInputViewWithTypeNum;
 /**
- *  数字+小数点
+ *  密码键盘
  */
-+(YJInputView *)shareKBInputViewWithTypePassword;
++(YJInputView *)shareInputViewWithTypePassword;
 /**
  *  字母+符号
  */
-+(YJInputView *)shareKBInputViewWithTypeLetter;
++(YJInputView *)shareInputViewWithTypeLetter;
 
-// 显示
--(void)show;
+- (void)show;
 
 @end
 

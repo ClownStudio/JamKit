@@ -7,7 +7,6 @@
 //
 
 #import "YJInputView.h"
-#import "KRKeyboard.h"
 
 @implementation YJInputView
 
@@ -25,6 +24,7 @@ static YJInputView* keyboardViewTypeLetterInstance = nil;
     });
     return keyboardInputViewInstance;
 }
+
 // 数字
 +(YJInputView *)shareInputViewWithTypeNum
 {
@@ -34,6 +34,7 @@ static YJInputView* keyboardViewTypeLetterInstance = nil;
     });
     return keyboardViewTypeNumInstance;
 }
+
 // 交易密码
 +(YJInputView *)shareInputViewWithTypePassword
 {
@@ -44,7 +45,7 @@ static YJInputView* keyboardViewTypeLetterInstance = nil;
     return keyboardViewTypePasswordInstance;
 }
 // 字母
-+(YJInputView *)shareKBInputViewWithTypeLetter
++(YJInputView *)shareInputViewWithTypeLetter
 {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -58,11 +59,61 @@ static YJInputView* keyboardViewTypeLetterInstance = nil;
     self = [super init];
     if (self) {
         self.textField = [[UITextField alloc] init];
-        self.textField.delegate = self;
-        KRKeyboard *keyboard = [KRKeyboard creatWithKeyboardType:type delegateTarget:self];
+        self.textField.inputAccessoryView = nil;
+        
         [self addSubview:self.textField];
+        KRKeyboard *keyboard = [KRKeyboard creatWithKeyboardType:type delegateTarget:self];
+        self.textField.inputView = keyboard;
     }
     return self;
+}
+
+- (void)show{
+    UIViewController *topVC = [self getCurrentViewController];
+    [topVC.view addSubview:self];
+    [self.textField becomeFirstResponder];
+}
+
+- (void)pressKey:(NSString *)key keyType:(KRKeyType)keyType keyboardType:(KRKeyboardType)keyboardType content:(NSString *)content{
+    if (keyType == DoneKeyType) {
+        [self.textField resignFirstResponder];
+        return;
+    }
+    if (self.inputViewDelegate && [self.inputViewDelegate respondsToSelector:@selector(editTextWithTag: content:)])
+    {
+        [self.inputViewDelegate editTextWithTag:_textTag content:content];
+    }
+}
+
+#pragma mark - getter setter
+
+//获取当前屏幕显示的viewcontroller
+- (UIViewController *)getCurrentViewController{
+    UIViewController *result = nil;
+    
+    UIWindow * window = [[UIApplication sharedApplication] keyWindow];
+    if (window.windowLevel != UIWindowLevelNormal)
+    {
+        NSArray *windows = [[UIApplication sharedApplication] windows];
+        for(UIWindow * tmpWin in windows)
+        {
+            if (tmpWin.windowLevel == UIWindowLevelNormal)
+            {
+                window = tmpWin;
+                break;
+            }
+        }
+    }
+    
+    UIView *frontView = [[window subviews] objectAtIndex:0];
+    id nextResponder = [frontView nextResponder];
+    
+    if ([nextResponder isKindOfClass:[UIViewController class]])
+        result = nextResponder;
+    else
+        result = window.rootViewController;
+    
+    return result;
 }
 
 @end
