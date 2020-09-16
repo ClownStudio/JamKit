@@ -18,7 +18,6 @@
 		4226D1FD250F1C4B006BC7A1 /* KRAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4226D1E3250F1C4B006BC7A1 /* KRAssets.xcassets */; };
 		4226D1FE250F1C4B006BC7A1 /* KRKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 4226D1E5250F1C4B006BC7A1 /* KRKeyboard.m */; };
 		4226D201250F29DF006BC7A1 /* NSArray+Sudoku.m in Sources */ = {isa = PBXBuildFile; fileRef = 4226D200250F29DF006BC7A1 /* NSArray+Sudoku.m */; };
-		4226D208250F6CA8006BC7A1 /* NoInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4226D207250F6CA8006BC7A1 /* NoInputAccessoryView.m */; };
 		425F31AB24FF9E240041858A /* YJHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 425F31A724FF9E240041858A /* YJHttpRequest.m */; };
 		425F31AC24FF9E240041858A /* YJJsonKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 425F31A924FF9E240041858A /* YJJsonKit.m */; };
 		42ABDCEE24F8B7AA00E7ADF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42ABDCED24F8B7AA00E7ADF8 /* AppDelegate.m */; };
@@ -74,8 +73,6 @@
 		4226D1E5250F1C4B006BC7A1 /* KRKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRKeyboard.m; sourceTree = "<group>"; };
 		4226D1FF250F29DF006BC7A1 /* NSArray+Sudoku.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Sudoku.h"; sourceTree = "<group>"; };
 		4226D200250F29DF006BC7A1 /* NSArray+Sudoku.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Sudoku.m"; sourceTree = "<group>"; };
-		4226D206250F6CA8006BC7A1 /* NoInputAccessoryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoInputAccessoryView.h; sourceTree = "<group>"; };
-		4226D207250F6CA8006BC7A1 /* NoInputAccessoryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoInputAccessoryView.m; sourceTree = "<group>"; };
 		425F31A624FF9E240041858A /* YJHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJHttpRequest.h; sourceTree = "<group>"; };
 		425F31A724FF9E240041858A /* YJHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJHttpRequest.m; sourceTree = "<group>"; };
 		425F31A924FF9E240041858A /* YJJsonKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJJsonKit.m; sourceTree = "<group>"; };
@@ -195,15 +192,6 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
-		4226D205250F6C93006BC7A1 /* NoInputAccessoryView */ = {
-			isa = PBXGroup;
-			children = (
-				4226D206250F6CA8006BC7A1 /* NoInputAccessoryView.h */,
-				4226D207250F6CA8006BC7A1 /* NoInputAccessoryView.m */,
-			);
-			path = NoInputAccessoryView;
-			sourceTree = "<group>";
-		};
 		425F31A524FF9E240041858A /* YJHttpRequest */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,7 +287,6 @@
 		42AE3EEF24FE3B6A00675837 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				4226D205250F6C93006BC7A1 /* NoInputAccessoryView */,
 				425F31A524FF9E240041858A /* YJHttpRequest */,
 				425F31A824FF9E240041858A /* YJJsonKit */,
 				42AE3EF924FE3D1E00675837 /* MobileSimUtil */,
@@ -604,7 +591,6 @@
 				42FFAFE524FF2C4F00199C7E /* WMScrollView.m in Sources */,
 				42ABDD4624FCFA4F00E7ADF8 /* BaseViewController.m in Sources */,
 				42FFAFE324FF2C4F00199C7E /* UIViewController+WMPageController.m in Sources */,
-				4226D208250F6CA8006BC7A1 /* NoInputAccessoryView.m in Sources */,
 				42AE3EEC24FE2B7000675837 /* WebViewViewController.m in Sources */,
 				42FFAFE624FF2C4F00199C7E /* WMMenuView.m in Sources */,
 				42ABDD0C24F8B8D300E7ADF8 /* RootViewController.m in Sources */,

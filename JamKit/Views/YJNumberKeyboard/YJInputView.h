@@ -26,6 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSMutableString *placeholderText;
 @property (nonatomic, strong) NSString *textTag;
 @property (nonatomic, weak) id<YJInputViewDelegate> inputViewDelegate;
+@property (nonatomic, strong) KRKeyboard *keyboard;
 
 /**
  *  带字母 字符 数字切换工具条
@@ -44,7 +45,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 +(YJInputView *)shareInputViewWithTypeLetter;
 
-- (void)show;
+- (void)showWithOriginText:(NSString *)text;
 
 @end
 

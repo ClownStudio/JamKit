@@ -62,15 +62,16 @@ static YJInputView* keyboardViewTypeLetterInstance = nil;
         self.textField.inputAccessoryView = nil;
         
         [self addSubview:self.textField];
-        KRKeyboard *keyboard = [KRKeyboard creatWithKeyboardType:type delegateTarget:self];
-        self.textField.inputView = keyboard;
+        _keyboard = [KRKeyboard creatWithKeyboardType:type delegateTarget:self];
+        self.textField.inputView = _keyboard;
     }
     return self;
 }
 
-- (void)show{
+- (void)showWithOriginText:(NSString *)text{
     UIViewController *topVC = [self getCurrentViewController];
     [topVC.view addSubview:self];
+    [_keyboard setContent:text];
     [self.textField becomeFirstResponder];
 }
 
