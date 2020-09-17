@@ -40,9 +40,14 @@
 #pragma mark - =============生命周期=================
 
 - (instancetype)initWithFrame:(CGRect)frame{
-    
-    if (self = [super initWithFrame:CGRectMake(0, 0, KSCREEN_WIDTH, KRKEYBOARDHEIGHT)]) {
-        
+    CGFloat keyboardHeight = KRKEYBOARDHEIGHT;
+    if (@available(iOS 11.0, *)) {
+        UIWindow *window = [UIApplication sharedApplication].delegate.window;
+        CGFloat bottomHeight = window.safeAreaInsets.bottom;
+        keyboardHeight += bottomHeight;
+    }
+    if (self = [super initWithFrame:CGRectMake(0, 0, KSCREEN_WIDTH, keyboardHeight)]) {
+        self.backgroundColor = [UIColor whiteColor];
         [self initKeyboard];
         
     }

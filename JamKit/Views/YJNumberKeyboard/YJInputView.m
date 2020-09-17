@@ -58,12 +58,11 @@ static YJInputView* keyboardViewTypeLetterInstance = nil;
 {
     self = [super init];
     if (self) {
-        self.textField = [[UITextField alloc] init];
-        self.textField.inputAccessoryView = nil;
-        
-        [self addSubview:self.textField];
         _keyboard = [KRKeyboard creatWithKeyboardType:type delegateTarget:self];
+        self.textField = [[UITextField alloc] init];
         self.textField.inputView = _keyboard;
+        [self.textField setInputAccessoryView:[UIView new]];
+        [self addSubview:self.textField];
     }
     return self;
 }

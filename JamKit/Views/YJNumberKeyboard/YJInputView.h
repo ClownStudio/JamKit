@@ -23,7 +23,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface YJInputView : UIView <UITextFieldDelegate,KRKeyboardDelegate>
 
 @property (nonatomic, strong) UITextField *textField;
-@property (nonatomic, copy) NSMutableString *placeholderText;
 @property (nonatomic, strong) NSString *textTag;
 @property (nonatomic, weak) id<YJInputViewDelegate> inputViewDelegate;
 @property (nonatomic, strong) KRKeyboard *keyboard;
